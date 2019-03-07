@@ -1,0 +1,133 @@
+.footer {
+    width: 100%;
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .leftSide {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .rightSide {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    list-style: none;
+    margin: 10px 0;
+    text-align: left;
+    a {
+      text-decoration: none;
+      &:link {
+          color: #fff;
+        }
+      &:hover {
+          color: #ccc;
+        }
+    }
+  }
+  
+  .media {
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    p {
+      font-size: 16px;
+      margin-top: 5px;
+    }
+    a {
+      text-decoration: none;
+      &:link {
+          color: #fff;
+        }
+      &:hover {
+          color: #ccc;
+        }
+    }
+  }
+  
+  .column {
+    padding: 10px 0;
+  }
+  
+  .copyright{
+    padding: 10px 0;
+    display: flex;
+    order: 9;
+    p,a {
+      font-size: 10px;
+      text-decoration: none;
+      text-align: center;
+      color: #fff;
+    }
+  }
+  
+  .fa-facebook-square {
+    color: #3b5998;
+  }
+  
+  .fa-envelope{
+    color: #ccc;
+  }
+.fa-github-square{
+    color: #333;
+}
+.fa-linkedin{
+    color: #0077b5;
+}
+
+
+
+  
+  @media screen and (max-width: 990px) {
+    .leftSide {
+      flex-wrap: wrap;
+      width: 100%;
+      order: 2;
+    }
+    .listColumn {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      width: 50%;
+      padding: 0 30px;
+    }
+    .rightSide {
+      width: 100%;
+      order: 1;
+    }
+    .media {
+      width: 25%;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .leftSide{
+      flex-wrap: wrap;
+      width: 100%;
+      order: 2;
+    }
+    .listColumn {
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+      width: 100%;
+      padding: 0 30px;
+    }
+    .rightSide {
+      width: 100%;
+      order: 1;
+    }
+    .media {
+      width: 25%;
+    }
+  }
