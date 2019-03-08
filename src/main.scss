@@ -1,12 +1,16 @@
 @import "scss/sidenav", 
-        "scss/footer";
+        "scss/footer",
+        "scss/counter";
 
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
   }
     
-    body {
-      background: green;
-    }
+body {
+  background: green;
+}
 
+.container__sheet{
+  width: 100%;
+}

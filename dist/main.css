@@ -82,7 +82,7 @@
     .item a:link {
       color: #fff; }
     .item a:hover {
-      color: #00f; }
+      color: #ccc; }
 
 .media {
   width: 50%;
@@ -96,10 +96,8 @@
     text-decoration: none; }
     .media a:link {
       color: #fff; }
-    .media a:visited {
-      color: #f00; }
     .media a:hover {
-      color: #00f; }
+      color: #ccc; }
 
 .column {
   padding: 10px 0; }
@@ -117,14 +115,14 @@
 .fa-facebook-square {
   color: #3b5998; }
 
-.fa-twitter-square {
-  color: #1da1f2; }
-
-.fa-google-plus-square {
-  color: #dd4b39; }
-
 .fa-envelope {
-  color: #fff; }
+  color: #ccc; }
+
+.fa-github-square {
+  color: #333; }
+
+.fa-linkedin {
+  color: #0077b5; }
 
 @media screen and (max-width: 990px) {
   .leftSide {
@@ -160,10 +158,51 @@
   .media {
     width: 25%; } }
 
+.counter--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 320px; }
+
+.container--small {
+  width: 300px;
+  height: 150px;
+  background: #ccc;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.container--small::before {
+  content: "";
+  position: absolute;
+  top: -75px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 75px solid #ccc; }
+
+.container--small::after {
+  content: "";
+  position: absolute;
+  bottom: -75px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-top: 75px solid #ccc; }
+
 * {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif; }
 
 body {
   background: green; }
+
+.container__sheet {
+  width: 100%; }
 
