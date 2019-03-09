@@ -1,6 +1,7 @@
 @import "scss/sidenav", 
         "scss/footer",
-        "scss/counter";
+        "scss/counter",
+        "scss/mixins/_colors.scss";
 
 * {
     box-sizing: border-box;
@@ -8,7 +9,7 @@
   }
     
 body {
-  background: green;
+  background-color: $color_primary_0;
 }
 
 .container__sheet{

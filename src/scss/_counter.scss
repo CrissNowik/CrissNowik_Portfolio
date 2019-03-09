@@ -1,47 +1,10 @@
+@import "mixins/mixins";
+
 .counter--container{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 320px;
-
 }
 
-.container--small {
-    width: 300px;
-    height: 150px;
-    background: #ccc;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    .container__header {
-        
-        .counterDisplay { 
-
-        }
-     }
- }
-
- .container--small::before {
-    content: "";
-    position: absolute;
-    top: -75px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-    border-bottom: 75px solid #ccc;
-}
-.container--small::after {
-    content: "";
-    position: absolute;
-    bottom: -75px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-    border-top: 75px solid #ccc;
-}
+@include hexagon(300px, #ccc, "container--small");
