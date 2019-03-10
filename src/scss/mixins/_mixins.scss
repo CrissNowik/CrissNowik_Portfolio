@@ -1,4 +1,4 @@
-@mixin hexagon($width, $background-color, $class) {
+@mixin hexagon($width, $background-color, $margin-bottom, $class) {
 
     $base_class_width: $width;
     $base_class_heigth: $base_class_width/2;
@@ -15,6 +15,7 @@
         width: $base_class_width;
         height: $base_class_heigth;
         background-color: $background-color;
+        margin-bottom: $margin-bottom;
         position: relative;
         display: flex;
         justify-content: center;

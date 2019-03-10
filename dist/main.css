@@ -1,55 +1,47 @@
 .sidenav {
   float: right; }
-
-.sidenav_list {
-  list-style: none; }
-
-.sidenav_link {
-  text-decoration: none; }
-
-.sidenav_listItem {
-  width: 50px;
-  height: 27px;
-  background: #ccc;
-  position: relative;
-  margin-bottom: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.sidenav__icon {
-  color: #fff; }
-
-.sidenav_listItem:hover {
-  background-color: #000; }
-
-.sidenav_listItem::before {
-  content: "";
-  position: absolute;
-  top: -12px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 12px solid #ccc; }
-
-.sidenav_listItem:hover::before {
-  border-bottom: 12px solid #000; }
-
-.sidenav_listItem::after {
-  content: "";
-  position: absolute;
-  bottom: -12px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-top: 12px solid #ccc; }
-
-.sidenav_listItem:hover::after {
-  border-top: 12px solid #000; }
+  .sidenav .sidenav_list {
+    list-style: none; }
+    .sidenav .sidenav_list .sidenav_link {
+      text-decoration: none; }
+    .sidenav .sidenav_list .sidenav_listItem {
+      width: 50px;
+      height: 25px;
+      background-color: #ccc;
+      margin-bottom: 14px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+    .sidenav .sidenav_list .sidenav_listItem::before {
+      content: "";
+      position: absolute;
+      top: -12.5px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: 12.5px solid #ccc; }
+    .sidenav .sidenav_list .sidenav_listItem::after {
+      content: "";
+      position: absolute;
+      bottom: -12.5px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-top: 12.5px solid #ccc; }
+    .sidenav .sidenav_list .sidenav_listItem:hover::before {
+      border-bottom: 12px solid #000; }
+    .sidenav .sidenav_list .sidenav_listItem:hover {
+      background-color: #000; }
+    .sidenav .sidenav_list .sidenav_listItem:hover::after {
+      border-top: 12px solid #000; }
+    .sidenav .sidenav_list .sidenav__icon {
+      color: #fff; }
 
 .even {
   margin-left: 28px; }
@@ -168,6 +160,7 @@
   width: 300px;
   height: 150px;
   background-color: #ccc;
+  margin-bottom: 0;
   position: relative;
   display: flex;
   justify-content: center;
