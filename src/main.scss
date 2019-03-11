@@ -1,15 +1,18 @@
 @import "scss/sidenav", 
         "scss/footer",
+        "scss/header.scss",
         "scss/counter",
         "scss/mixins/_colors.scss";
 
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    padding: 0;
   }
     
 body {
-  background-color: $main_dark_0;
+  background-color: $thi_dark_2;
+  @include gradient;
 }
 
 .container__sheet{

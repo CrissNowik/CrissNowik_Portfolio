@@ -7,7 +7,7 @@
     .sidenav .sidenav_list .sidenav_listItem {
       width: 50px;
       height: 25px;
-      background-color: #ccc;
+      background-color: #ede;
       margin-bottom: 14px;
       position: relative;
       display: flex;
@@ -23,7 +23,7 @@
       height: 0;
       border-left: 25px solid transparent;
       border-right: 25px solid transparent;
-      border-bottom: 12.5px solid #ccc; }
+      border-bottom: 12.5px solid #ede; }
     .sidenav .sidenav_list .sidenav_listItem::after {
       content: "";
       position: absolute;
@@ -33,15 +33,15 @@
       height: 0;
       border-left: 25px solid transparent;
       border-right: 25px solid transparent;
-      border-top: 12.5px solid #ccc; }
+      border-top: 12.5px solid #ede; }
     .sidenav .sidenav_list .sidenav_listItem:hover::before {
-      border-bottom: 12px solid #000; }
+      border-bottom: 12px solid #0482FB; }
     .sidenav .sidenav_list .sidenav_listItem:hover {
-      background-color: #000; }
+      background-color: #0482FB; }
     .sidenav .sidenav_list .sidenav_listItem:hover::after {
-      border-top: 12px solid #000; }
+      border-top: 12px solid #0482FB; }
     .sidenav .sidenav_list .sidenav__icon {
-      color: #fff; }
+      color: #002C56; }
 
 .even {
   margin-left: 28px; }
@@ -159,7 +159,7 @@
 .container--small {
   width: 300px;
   height: 150px;
-  background-color: #ccc;
+  background-color: #ede;
   margin-bottom: 0;
   position: relative;
   display: flex;
@@ -176,7 +176,7 @@
   height: 0;
   border-left: 150px solid transparent;
   border-right: 150px solid transparent;
-  border-bottom: 75px solid #ccc; }
+  border-bottom: 75px solid #ede; }
 
 .container--small::after {
   content: "";
@@ -187,7 +187,7 @@
   height: 0;
   border-left: 150px solid transparent;
   border-right: 150px solid transparent;
-  border-top: 75px solid #ccc; }
+  border-top: 75px solid #ede; }
 
 * {
   box-sizing: border-box;

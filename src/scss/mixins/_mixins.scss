@@ -1,3 +1,9 @@
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 @mixin hexagon($width, $background-color, $margin-bottom, $class) {
 
     $base_class_width: $width;
@@ -17,9 +23,7 @@
         background-color: $background-color;
         margin-bottom: $margin-bottom;
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include center;
         flex-direction: column;
     }
 
@@ -60,4 +64,11 @@
     // .class:hover::before {
     //     border-bottom: $border_top solid #000;
     // }
+}
+
+@mixin gradient {
+background: -moz-linear-gradient(45deg, #002c56 1%, #2989d8 30%, #eeddee 100%);
+background: -webkit-linear-gradient(45deg, #002c56 1%,#2989d8 30%,#eeddee 100%);
+background: linear-gradient(45deg, #002c56 1%,#2989d8 30%,#eeddee 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002c56', endColorstr='#eeddee',GradientType=1 );
 }

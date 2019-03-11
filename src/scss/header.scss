@@ -1,0 +1,32 @@
+@import "mixins/mixins";
+
+.head {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .head__link{
+        width: 10%;
+        .head__logo {
+            padding: 20px;
+         }
+    }
+    .head__container{
+        width: 90%;
+        .head__header {
+            font-size: 100px;
+            color: $main_dark_0;
+            text-align: center;
+            width: 100%;
+            margin: 0;
+         }
+        .head__subheader {
+            font-size: 50px;
+            color: $main_dark_0;
+            width: 100%;
+            text-align: center; 
+            float: right;
+         }
+    }
+   
+ }
