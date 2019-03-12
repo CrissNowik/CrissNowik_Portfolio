@@ -1,8 +1,9 @@
 @import "scss/sidenav", 
         "scss/footer",
-        "scss/header.scss",
+        "scss/header",
         "scss/counter",
-        "scss/mixins/_colors.scss";
+        "scss/mixins/colors",
+        "scss/sites/homescreen";
 
 * {
     box-sizing: border-box;
