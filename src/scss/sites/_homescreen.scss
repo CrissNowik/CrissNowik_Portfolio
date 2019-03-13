@@ -1,0 +1,28 @@
+@import "../mixins/_mixins", 
+        "../mixins/colors";
+.navi {
+    @include center;
+    flex-direction: column;
+     .navi__photo{
+         width: 800px;
+         height: 800px;
+         background-image: url("http://localhost:8080/src/photo/Criss_Nowik_portrait.jpg");
+         
+     } 
+     .navi__container{
+        @include center;
+
+        .navi__link {
+            margin: 10px;
+            @include hexagon(300px, $sec_light_1, 0, "navi__btn"); 
+            .navi__txt {
+
+             }
+            .navi__ico {
+
+             }
+         }
+     }
+    
+     }
+
