@@ -1,28 +1,39 @@
-@import "../mixins/_mixins", 
-        "../mixins/colors";
+@import "../mixins/_mixins",
+"../mixins/colors";
+
 .navi {
     @include center;
     flex-direction: column;
-     .navi__photo{
-         width: 800px;
-         height: 800px;
-         background-image: url("http://localhost:8080/src/photo/Criss_Nowik_portrait.jpg");
-         
-     } 
-     .navi__container{
+
+    .navi__photo {
+        width: 800px;
+        height: 800px;
+        background-image: url("http://localhost:8080/src/photo/Criss_Nowik_portrait.jpg");
+
+    }
+
+    .navi__container {
         @include center;
 
         .navi__link {
             margin: 10px;
-            @include hexagon(300px, $sec_light_1, 0, "navi__btn"); 
+            text-decoration: none;
+            @include hexagon(300px, $sec_dark, 0, "navi__btn");
+        
             .navi__txt {
+                color: $sec_light;
+                font-size: 30px;
+                margin: 0 0 5px 0;
+                font-weight: bold;
+                cursor: pointer;
+            }
 
-             }
             .navi__ico {
+                color: $sec_light;
+                font-size: 70px;
+                cursor: pointer;
+            }
+        }
+    }
 
-             }
-         }
-     }
-    
-     }
-
+}

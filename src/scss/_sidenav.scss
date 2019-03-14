@@ -8,20 +8,20 @@
         .sidenav_link {
             text-decoration: none;
         }
-        @include hexagon(50px, $main_light_0, 14px, "sidenav_listItem");
+        @include hexagon(50px, $main_light, 14px, "sidenav_listItem");
         .sidenav_listItem:hover::before {
-            border-bottom: 12px solid $sec_light_1;
+            border-bottom: 12px solid $sec_light;
         }
         
         .sidenav_listItem:hover {
-            background-color: $sec_light_1;
+            background-color: $sec_light;
         }
         
         .sidenav_listItem:hover::after {
-            border-top: 12px solid $sec_light_1;
+            border-top: 12px solid $sec_light;
         }
         .sidenav__icon {
-            color: $thi_dark_2;
+            color: $thi_dark;
         }
     }
 }
