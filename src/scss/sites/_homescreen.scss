@@ -4,13 +4,33 @@
 .navi {
     @include center;
     flex-direction: column;
-
+    
     .navi__photo {
-        width: 800px;
-        height: 800px;
-        background-image: url("http://localhost:8080/src/photo/Criss_Nowik_portrait.jpg");
+        width: 400px;
+        height: 200px;
+        background: red;
+        transform: rotate(120deg);
+        overflow: hidden;
+        visibility: hidden;
+        .navi__photo--inside {
+            width: 100%;
+            height: 100%;
+            background: green;
+            transform: rotate(-60deg);
+            overflow: hidden;
+            .navi__photo--image {
+                width: 100%;
+                height: 100%;
+                background-image: url("http://localhost:8080/src/photo/Criss_Nowik_portrait.jpg");
+                background-position: center;
+                background-size: 100% 100%;
+                transform: rotate(-60deg);
+                visibility: visible;
+             }
+         }
+     }
 
-    }
+
 
     .navi__container {
         @include center;
