@@ -1,25 +1,37 @@
+@import "./mixins/mixins",
+"./mixins/colors";
+
 .footer {
     width: 100%;
-    display: flex;
-    background-color: #000;
-    color: #fff;
+    display: none;
+    color: $thi_dark;
     justify-content: center;
     flex-wrap: wrap;
-  }
+  } 
   
   .leftSide {
     width: 75%;
     display: flex;
     justify-content: space-around;
   }
-  
   .rightSide {
     width: 25%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  
+  .copyright{
+    padding: 10px 0;
+    display: flex;
+    order: 9;
+    p,a {
+      font-size: 10px;
+      text-decoration: none;
+      text-align: center;
+      color: $thi_dark;
+    }
+  }
+
   .item {
     list-style: none;
     margin: 10px 0;
@@ -27,10 +39,10 @@
     a {
       text-decoration: none;
       &:link {
-          color: #fff;
+        color: $thi_dark;
         }
       &:hover {
-          color: #ccc;
+        color: $thi_light;
         }
     }
   }
@@ -47,28 +59,16 @@
     a {
       text-decoration: none;
       &:link {
-          color: #fff;
+          color: $thi_dark;;
         }
       &:hover {
-          color: #ccc;
+          color:$thi_light;
         }
     }
   }
   
   .column {
     padding: 10px 0;
-  }
-  
-  .copyright{
-    padding: 10px 0;
-    display: flex;
-    order: 9;
-    p,a {
-      font-size: 10px;
-      text-decoration: none;
-      text-align: center;
-      color: #fff;
-    }
   }
   
   .fa-facebook-square {
@@ -85,9 +85,27 @@
     color: #0077b5;
 }
 
-
-
-  
+@media screen and (max-width: 1100px ) {
+  .leftSide {
+    flex-wrap: wrap;
+    width: 100%;
+    order: 2;
+  }
+  .listColumn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    padding: 0 30px;
+  }
+  .rightSide {
+    width: 100%;
+    order: 1;
+  }
+  .media {
+    width: 25%;
+  }
+}
   @media screen and (max-width: 990px) {
     .leftSide {
       flex-wrap: wrap;
@@ -131,3 +149,14 @@
       width: 25%;
     }
   }
+
+  .fade-in-bottom {
+    -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  .fade-out-bottom {
+    -webkit-animation: fade-out-bottom 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: fade-out-bottom 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  @include fade-in-bottom;
+  @include fade-out-bottom;

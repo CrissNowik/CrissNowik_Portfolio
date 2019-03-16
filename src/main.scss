@@ -40,5 +40,13 @@ body {
       }
     }
  }
+ 
+ @include hexagon(100px, $main_dark, 0, "menu");
+ .menu {
+    font-size: 50px;
+    color: $main_light;
+    margin: 0 auto;
+}
+
 
 

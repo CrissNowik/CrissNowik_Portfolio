@@ -4,7 +4,7 @@
 .navi {
     @include center;
     flex-direction: row;
-    margin-bottom: -160px;
+    height: 500px;
 
     .navi__photo {
         width: 300px;
@@ -46,10 +46,11 @@
         margin-left: -155px;
 
         .navi__link {
-            margin: 10px;
             text-decoration: none;
             @include hexagon(300px, $sec_dark, 0, "navi__btn");
-
+            .navi__btn{
+                margin: 10px;
+            }
             .navi__txt {
                 color: $sec_light;
                 font-size: 30px;
@@ -63,36 +64,6 @@
                 font-size: 70px;
                 cursor: pointer;
             }
-        }
-    }
-
-}
-
-@mixin --quote_margin {
-    margin: 0 50px 0 150px;
-}
-
-.quotes__container {
-    display: flex;
-    flex-direction: row;
-    margin-left: 30px;
-
-    .quotes__container--sub {
-        @include hexagon(200px, $sec_light, 0, "quotes__quote");
-
-        .quotes__txt {
-            color: $main_light;
-            font-size: 16px;
-            text-align: center;
-        }
-
-        @include hexagon(100px, $sec_dark, 0, "quotes__src");
-
-        .quotes__src {
-            @include --quote_margin;
-            text-align: center;
-            font-size: 14px;
-            color: $sec_light;
         }
     }
 }

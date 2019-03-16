@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
-  <body>
+  <body id="body">
        <header class="head">
           <a href="http://localhost:8080" class="head__link" title="Idź do Strony Głównej">
             <div class="head__container">
@@ -47,7 +47,10 @@
             </div>
          </div>
        </nav>
-       <footer class="footer">
+       <div class="menu" id="menu">
+          <i class="fas fa-bars" class="menu__icon"></i>
+       </div>
+       <footer class="footer" id="footer">
           <div class="leftSide">
               <div class="listColumn">
                 <ul class="column one">
@@ -60,7 +63,7 @@
               </div>
               <div class="listColumn">
                 <ul class="column two">
-                  <h3>Usługi - testowanie</h3>
+                  <h3>Usługi - testowanie:</h3>
                   <li class="item"><a href="http://localhost:8080/src/pages/tester.html#testy_funkcjonalne" target="_blank">Testy funkcjonalne</a></li>
                   <li class="item"><a href="http://localhost:8080/src/pages/tester.html#qa_konsulting" target="_blank">QA Konsulting</a></li>
                   <li class="item"><a href="http://localhost:8080/src/pages/tester.html#audyty_SEO" target="_blank">Audyty SEO</a></li>
@@ -68,7 +71,7 @@
               </div>
               <div class="listColumn">
                 <ul class="column three">
-                  <h3>Usługi - frontend</h3>
+                  <h3>Usługi - frontend:</h3>
                   <li class="item"><a href="http://localhost:8080/src/pages/frontend_developer.html#strony_www" target="_blank">Strony www</a></li> 
                   <li class="item"><a href="http://localhost:8080/src/pages/frontend_developer.html#aplikacje_web" target="_blank">Aplikacje web</a></li>
                   <li class="item"><a href="http://localhost:8080/src/pages/frontend_developer.html#cutting" target="_blank">PSD do HTML</a></li>
@@ -111,7 +114,7 @@
             </div>
           </div>
           <div class="copyright">
-            <p> &copy; Created by <a href="https://github.com/CrissNowik" target="_blank"> CrissNowik</a></p>
+            <p> &copy; Created by <a href="https://github.com/CrissNowik" target="_blank"> CrissNowik 2019</a></p>
           </div>
         </footer>
   </body>
