@@ -31,7 +31,7 @@
         content: "";
         position: absolute;
         top: -$before_top;
-        left: 0;
+        left: -1px;
         width: 0;
         height: 0;
         border-left: $border_left solid transparent;
@@ -43,7 +43,7 @@
         content: "";
         position: absolute;
         bottom: -$after_bottom;
-        left: 0;
+        left: -1px;
         width: 0;
         height: 0;
         border-left: $border_left solid transparent;
