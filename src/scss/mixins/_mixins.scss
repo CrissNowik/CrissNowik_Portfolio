@@ -21,7 +21,7 @@
         width: $base_class_width;
         height: $base_class_heigth;
         background-color: $background-color;
-        margin-bottom: $margin-bottom;
+        margin: $margin-bottom;
         position: relative;
         @include center;
         flex-direction: column;
