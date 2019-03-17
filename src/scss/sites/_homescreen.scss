@@ -3,8 +3,9 @@
 
 .navi {
     @include center;
-    flex-direction: row;
+    flex-direction: column;
     height: 500px;
+    margin-bottom: 30px;
 
     .navi__photo {
         width: 300px;
@@ -14,7 +15,7 @@
         background-position: center center;
         position: relative;
         transform: rotate(90deg);
-        margin-bottom: 485px;
+        margin-left: -310px;
     }
 
     .navi__photo:before {
@@ -40,16 +41,21 @@
         border-bottom: 150px solid $main_light;
         border-top: 150px solid $main_light;
     }
+    .navi__photo:hover{
+        opacity: 0.7;
+    }
 
     .navi__container {
         @include center;
-        margin-left: -155px;
 
         .navi__link {
             text-decoration: none;
             @include hexagon(300px, $sec_dark, 0, "navi__btn");
             .navi__btn{
                 margin: 10px;
+            }
+            .navi__btn:hover{
+                opacity: 0.7;
             }
             .navi__txt {
                 color: $sec_light;

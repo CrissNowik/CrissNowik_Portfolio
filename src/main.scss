@@ -13,6 +13,7 @@
     
 body {
   background-color: $main_light;
+  max-height: 700px;
 }
 
 .container__sheet{
@@ -25,7 +26,6 @@ body {
 
   .cta__link {
     text-decoration: none;
-    
   }
   @include hexagon(300px, $sec_light, 0, "cta__btn" );
     .cta__btn{
@@ -38,8 +38,12 @@ body {
         color: $sec_dark;
         margin-top: 20px;
       }
-    }
+    }    
+        .cta__btn:hover{
+          opacity: 0.7;
+        }
  }
+
  
  @include hexagon(100px, $main_dark, 0, "menu");
  .menu {
@@ -48,6 +52,9 @@ body {
     position: fixed;
     top:50px;
     right: 50px;
+}
+.menu:hover{
+  opacity: 0.7;
 }
 
 

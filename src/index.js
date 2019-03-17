@@ -3,7 +3,6 @@ import "./main.scss"; // important for build - do not remove
 
 const menuIcon = document.getElementById("menu");
 const footer = document.getElementById("footer");
-// const body = document.getElementById("body");
 
 menuIcon.addEventListener("click", function(){
     let cl = footer.classList;    
