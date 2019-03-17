@@ -20,7 +20,7 @@ body {
   width: 100%;
 }
 
-.cta {
+.cta--big {
   display: flex;
   justify-content: flex-end;
 
@@ -45,9 +45,9 @@ body {
  }
 
  
- @include hexagon(100px, $main_dark, 0, "menu");
+ @include hexagon(50px, $sec_light, 0, "menu");
  .menu {
-    font-size: 50px;
+    font-size: 16px;
     color: $main_light;
     position: fixed;
     top:50px;

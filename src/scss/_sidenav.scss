@@ -2,31 +2,26 @@
 "mixins/colors";
 
 .sidenav {
-    float: right;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:250px;
+    right: 50px;
     .sidenav_list {
         list-style: none;
         .sidenav_link {
             text-decoration: none;
         }
-        @include hexagon(50px, $main_light, 14px, "sidenav_listItem");
-        .sidenav_listItem:hover::before {
-            border-bottom: 12px solid $sec_light;
-        }
-        
+        @include hexagon(50px, $sec_light, 14px, "sidenav_listItem");
         .sidenav_listItem:hover {
-            background-color: $sec_light;
+            opacity: 0.7;
         }
         
-        .sidenav_listItem:hover::after {
-            border-top: 12px solid $sec_light;
-        }
         .sidenav__icon {
-            color: $thi_dark;
+            color: $main_light;
         }
     }
 }
-
-
 
 .even {
     margin-left: 28px;

@@ -2,10 +2,8 @@
 "mixins/colors";
 
 .counter--container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include center;
     height: 320px;
 }
 
-@include hexagon(300px, $main_light, 0, "container--small");
+@include hexagon(300px, $main_dark, 0, "container--small");
