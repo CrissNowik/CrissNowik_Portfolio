@@ -45,7 +45,9 @@ body {
  .menu {
     font-size: 50px;
     color: $main_light;
-    margin: 0 auto;
+    position: fixed;
+    top:50px;
+    right: 50px;
 }
 
 
