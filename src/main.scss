@@ -41,8 +41,14 @@ body {
       
     }
      @include hexagon(400px, $thi_light,0, "container__txt");
+     @include hexagon(400px, $thi_light,0, "container__txt--without-img");
     .container__txt {
-      margin-left: 175px;
+      margin: 75px 0 75px 175px;
+      color: $main_light;
+      padding: 10px;
+     }
+     .container__txt--without-img{
+      margin: 75px 0 75px 175px;
       color: $main_light;
       padding: 10px;
      }
