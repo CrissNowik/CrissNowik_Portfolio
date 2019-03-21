@@ -148,3 +148,44 @@
             }
         }
     }
+    @media screen and (max-width: 520px ) {
+        .navi {
+            margin: -16px 0 70px 0;
+            .navi__link {
+                margin: 0;
+                .navi__photo {
+                    width: 210px;
+                    height: 210px;
+                    background: transparent url("http://localhost:8080/src/photo/Criss_Nowik_portrait_r.jpg") no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    position: relative;
+                    transform: rotate(90deg);
+                }
+            
+                .navi__photo:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -1px;
+                    width: 0;
+                    height: 0;
+                    border-right: 52.5px solid transparent;
+                    border-bottom: 105px solid $main_light;
+                    border-top: 105px solid $main_light;
+                }
+            
+                .navi__photo:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: -1px;
+                    width: 0;
+                    height: 0;
+                    border-left: 52.5px solid transparent;
+                    border-bottom: 105px solid $main_light;
+                    border-top: 105px solid $main_light;
+                }
+            }
+        }
+    }
