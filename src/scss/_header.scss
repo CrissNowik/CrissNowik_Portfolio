@@ -30,3 +30,20 @@
         }
     }
 }
+
+@media screen and (max-width: 765px){
+    .head {
+        .head__link {
+            .head__container {   
+                .head__header {
+                    font-size: 50px;
+                }
+                .head__subheader {
+                    font-size: 25px;
+                   
+                }
+            }
+        }
+    }
+    
+}
