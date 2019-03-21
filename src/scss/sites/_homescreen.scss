@@ -71,5 +71,88 @@
                 cursor: pointer;
             }
         }
+        .cta--big {
+            display: flex;
+            justify-content: flex-end;
+          
+            .cta__link {
+              text-decoration: none;
+            }
+            @include hexagon(300px, $sec_light, 0, "cta__btn" );
+              .cta__btn{
+                font-size: 30px;
+                font-weight: bolder;
+                color: $sec_dark;
+                margin: 10px;
+                .cta__icon{
+                  font-size: 70px;
+                  color: $sec_dark;
+                  margin-top: 20px;
+                }
+              }    
+                  .cta__btn:hover{
+                    opacity: 0.7;
+                  }
+           }
+    }
+}
+
+@media screen and (max-width: 950px ) {
+.navi {
+    margin: 110px 0 160px 0;
+    .navi__photo {
+        margin: 0;
+    }
+    .navi__container {
+        @include center; //
+        flex-wrap: wrap; //
+
+        .navi__link {
+            text-decoration: none;
+            @include hexagon(300px, $sec_dark, 0, "navi__btn");
+            .navi__btn{
+                margin: 10px;
+            }
+            .navi__btn:hover{
+                opacity: 0.7;
+            }
+            .navi__txt {
+                color: $sec_light;
+                font-size: 30px;
+                margin: 0 0 5px 0;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .navi__ico {
+                color: $sec_light;
+                font-size: 70px;
+                cursor: pointer;
+            }
+        }
+        .cta--big {
+            display: flex;
+            justify-content: flex-end;
+          
+            .cta__link {
+              text-decoration: none;
+            }
+            @include hexagon(300px, $sec_light, 0, "cta__btn" );
+              .cta__btn{
+                font-size: 30px;
+                font-weight: bolder;
+                color: $sec_dark;
+                margin: 75px 0 0 0; //
+                .cta__icon{
+                  font-size: 70px;
+                  color: $sec_dark;
+                  margin-top: 20px;
+                }
+              }    
+                  .cta__btn:hover{
+                    opacity: 0.7;
+                  }
+           }
+        }
     }
 }

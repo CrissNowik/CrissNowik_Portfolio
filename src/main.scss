@@ -44,34 +44,6 @@ body {
       color: $main_light;
       padding: 10px;
      }
-
-
-
-
-.cta--big {
-  display: flex;
-  justify-content: flex-end;
-
-  .cta__link {
-    text-decoration: none;
-  }
-  @include hexagon(300px, $sec_light, 0, "cta__btn" );
-    .cta__btn{
-      font-size: 30px;
-      font-weight: bolder;
-      color: $sec_dark;
-      margin: 10px;
-      .cta__icon{
-        font-size: 70px;
-        color: $sec_dark;
-        margin-top: 20px;
-      }
-    }    
-        .cta__btn:hover{
-          opacity: 0.7;
-        }
- }
-
  
  @include hexagon(50px, $sec_light, 0, "menu");
  .menu {
