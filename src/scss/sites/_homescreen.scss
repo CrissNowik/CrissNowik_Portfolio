@@ -191,14 +191,18 @@
     }
     @media screen and (max-width: 480px ) { 
         .navi {
-            // margin: 110px 0 160px 0;
-            align-items: unset;
-            .navi__photo {
-                margin-left: 20px;
+            margin: 60px 0 120px 0;
+            align-items: flex-start;
+            .navi__link {
+
+                .navi__photo {
+                margin: 0;
+                }
             }
             .navi__container {
                 @include center; 
                 flex-wrap: wrap; 
+                flex-direction: column;
                 .navi__link {
                     @include hexagon(210px, $sec_dark, 0, "navi__btn");
                     .navi__btn{
@@ -209,11 +213,23 @@
                             font-size: 45px;
                         }
                     }
-                    .break480{
-                        margin-top: 60px;
-                        flex-grow: 2;
+                    .break480--top{
+                        margin-left: 105px;
+                    }
+                    .break480--bottom{
+                        margin: 60px 115px 0 0;
                     }
                 }
+                .cta--big {
+                    @include hexagon(210px, $sec_light, 0, "cta__btn" );
+                      .cta__btn{
+                        font-size: 20px;
+                        margin: 59px 0 0 105px; 
+                        .cta__icon{
+                            font-size: 45px;
+                          }
+                      }    
+                   }
             }       
         }
     }
