@@ -189,3 +189,31 @@
             }
         }
     }
+    @media screen and (max-width: 480px ) { 
+        .navi {
+            // margin: 110px 0 160px 0;
+            align-items: unset;
+            .navi__photo {
+                margin-left: 20px;
+            }
+            .navi__container {
+                @include center; 
+                flex-wrap: wrap; 
+                .navi__link {
+                    @include hexagon(210px, $sec_dark, 0, "navi__btn");
+                    .navi__btn{
+                        .navi__txt {
+                            font-size: 20px;                   
+                        }
+                        .navi__ico {
+                            font-size: 45px;
+                        }
+                    }
+                    .break480{
+                        margin-top: 60px;
+                        flex-grow: 2;
+                    }
+                }
+            }       
+        }
+    }
