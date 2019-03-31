@@ -26,7 +26,10 @@
     }
     .container__listItem--odd{
         @extend .container__listItem;
-        margin: 40px 0 0 75px;
+        margin: 20px 0 0 20px;
+    }
+    .first{
+        margin: 20px 0 0 96px;
     }
 }
 @include hexagon(400px, $thi_light,0, "container__txt");
