@@ -1,51 +1,5 @@
-@include hexagon(150px, $main_dark, 0, "container__header--big");
-.container__header--big{
-  color: $main_light;
-  text-align: center;
-  font-size: 20px;
-}
-@include hexagon(100px, $main_dark, 0, "container__header");
-.container__header {
-  color: $main_light;
-  text-align: center;
- }
+@import "./mixins/_mixins";
 
-.container__photo {
-  
-}
-.container__list{
-    @include hexagon(150px, $thi_light,0, "container__listItem");
-    list-style-type: none;
-    .container__listItem{
-        display: inline-block;
-        color: $main_light;
-        padding: 10px;
-        text-align: center;
-        font-size: 12px;
-        margin: 10px;
-    }
-    .container__listItem--odd{
-        @extend .container__listItem;
-        margin: 20px 0 0 20px;
-    }
-    .first{
-        margin: 20px 0 0 96px;
-    }
-}
-@include hexagon(400px, $thi_light,0, "container__txt");
- .container__txt {
-     margin: 75px 0 75px 175px;
-     color: $main_light;
-     padding: 10px;
-     font-size: 12px;
-    }
-
-@include hexagon(400px, $thi_light,0, "container__txt--without-img");
- .container__txt--without-img{
-  margin: 75px 0 75px 175px;
-  color: $main_light;
-  padding: 10px;
- }
 
 @include hexagon(50px, $sec_light, 0, "menu");
 .menu {
@@ -59,6 +13,7 @@ z-index: 2;
 .menu:hover{
 opacity: 0.7;
 }
+
 
 @media screen and (max-width: 480px ) { 
     .menu {

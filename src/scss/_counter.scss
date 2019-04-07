@@ -5,5 +5,3 @@
     @include center;
     height: 320px;
 }
-
-@include hexagon(300px, $main_dark, 0, "container--small");
