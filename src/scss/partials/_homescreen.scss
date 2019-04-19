@@ -1,0 +1,53 @@
+@import "../mixins/_mixins",
+"../mixins/colors";
+
+.hero-photo { 
+    width: 100%;
+    height: 900px;
+    background-image:url("http://localhost:8080/src/photo/dummy_photo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    .main-header {
+        font-size: 4rem;
+        color: $main_light;
+        @include center;
+        .main-header__part--color {
+            background-color: $secondary;
+            padding: 15px 0;
+            text-align: center;
+    
+        }
+        .main-header__part--dark {
+            background-color: $main_dark;
+            padding: 15px 0;
+            text-align: center;
+        }
+    }
+    
+    .subheader {
+        font-size: 2rem;
+        color: $main_light;
+        text-align: center;
+        @include center;
+        .subheader__part--dark {
+            background-color: $main_dark;
+            color: $main_light;
+            padding: 10px 0;
+        }
+        .subheader__part--light {
+            background-color: $main_light;
+            color: $secondary; 
+            padding: 8px 0 10px 0;
+            border-bottom: 2px solid $secondary;
+        }
+       .subheader__part--color {
+           background-color: $secondary;
+           color: $main_light;
+           padding: 10px 0;
+        }
+    }
+
+
+
+

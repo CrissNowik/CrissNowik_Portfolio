@@ -4,68 +4,6 @@
     justify-content: center;
   }
 
-@mixin hexagon($width, $background-color, $margin-bottom, $class) {
-
-    $base_class_width: $width;
-    $base_class_heigth: $base_class_width/2;
-
-    $before_top: $base_class_heigth/2;
-    $after_bottom: $base_class_heigth/2;
-
-    $border_left: $base_class_heigth;
-    $border_right: $base_class_heigth;
-    $border_bottom: $base_class_heigth/2;
-    $border_top: $base_class_heigth/2;
-    
-    .#{$class} {
-        width: $base_class_width;
-        height: $base_class_heigth;
-        background-color: $background-color;
-        margin-bottom: $margin-bottom;
-        position: relative;
-        @include center;
-        flex-direction: column;
-    }
-
-    .#{$class}::before {
-        content: "";
-        position: absolute;
-        top: -$before_top;
-        left: -1px;
-        width: 0;
-        height: 0;
-        border-left: $border_left solid transparent;
-        border-right: $border_right solid transparent;
-        border-bottom: $border_bottom solid $background-color;
-    }
-
-    .#{$class}::after {
-        content: "";
-        position: absolute;
-        bottom: -$after_bottom;
-        left: -1px;
-        width: 0;
-        height: 0;
-        border-left: $border_left solid transparent;
-        border-right: $border_right solid transparent;
-        border-top: $border_top solid $background-color;
-    }
-
-    // options: 
-
-    // .class:hover {
-    //     background-color: #000;
-    // }
-
-    // .class:hover::after {
-    //     border-top: $border_top solid #000;
-    // }
-
-    // .class:hover::before {
-    //     border-bottom: $border_top solid #000;
-    // }
-}
-
 @mixin fade-in-bottom {
 @-webkit-keyframes fade-in-bottom {
     0% {

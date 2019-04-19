@@ -1,10 +1,10 @@
-@import "./mixins/mixins",
-"./mixins/colors";
+@import "../mixins/mixins",
+"../mixins/colors";
 
 .footer {
     width: 100%;
     display: none;
-    color: $thi_dark;
+    color: #000;
     justify-content: center;
     flex-wrap: wrap;
   } 
@@ -28,7 +28,7 @@
       font-size: 10px;
       text-decoration: none;
       text-align: center;
-      color: $thi_dark;
+      color: #000;
     }
   }
 
@@ -39,10 +39,10 @@
     a {
       text-decoration: none;
       &:link {
-        color: $thi_dark;
+        color: #000;
         }
       &:hover {
-        color: $thi_light;
+        color: #ccc;
         }
     }
   }
@@ -59,10 +59,10 @@
     a {
       text-decoration: none;
       &:link {
-          color: $thi_dark;;
+          color: #000;;
         }
       &:hover {
-          color:$thi_light;
+          color:#ccc;
         }
     }
   }

@@ -1,5 +1,5 @@
-@import "mixins/mixins",
-"mixins/colors";
+@import "../mixins/mixins",
+"../mixins/colors";
 
 .counter--container{
     @include center;
