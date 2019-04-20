@@ -14,7 +14,7 @@ justify-content: flex-start;
     .menu {
         list-style: none;
         .menu__item { 
-            font-size: 25px;
+            font-size: 20px;
             width: 75px;
             height: 75px;
             @include center;
@@ -22,12 +22,14 @@ justify-content: flex-start;
         }
         .menu__item:hover{
             background: $secondary;
+            border-top: 2px solid $main_dark;
         }
         .menu__item--first{
             background: $secondary;
         }
         .menu__item--first:hover{
             background: $main_dark;
+            border-bottom: 2px solid $secondary;
         }
         
      }

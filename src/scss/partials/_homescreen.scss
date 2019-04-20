@@ -3,7 +3,7 @@
 
 .hero-photo { 
     width: 100%;
-    height: 900px;
+    height: 800px;
     background-image:url("http://localhost:8080/src/photo/dummy_photo.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,17 +11,31 @@
     .main-header {
         font-size: 4rem;
         color: $main_light;
-        @include center;
-        .main-header__part--color {
+        margin-top: 50px;
+        .main-header__part--hidden {
             background-color: $secondary;
             padding: 15px 0;
             text-align: center;
+            display: none;
     
         }
         .main-header__part--dark {
             background-color: $main_dark;
+            padding: 15px 30px;
+            text-align: center;
+        }
+    }
+    .fake-header{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 50px;
+        .fake-header__part--color{
+            color: $main_light;
+            font-size: 4rem;
+            background-color: $secondary;
             padding: 15px 0;
             text-align: center;
+            font-weight: bolder;
         }
     }
     
@@ -29,25 +43,16 @@
         font-size: 2rem;
         color: $main_light;
         text-align: center;
-        @include center;
-        .subheader__part--dark {
-            background-color: $main_dark;
-            color: $main_light;
-            padding: 10px 0;
-        }
-        .subheader__part--light {
-            background-color: $main_light;
-            color: $secondary; 
-            padding: 8px 0 10px 0;
-            border-bottom: 2px solid $secondary;
-        }
-       .subheader__part--color {
-           background-color: $secondary;
-           color: $main_light;
-           padding: 10px 0;
-        }
+// child classes below as a mixin functions
+        @include subheader__part--("dark", $main_dark, $main_light, $main_light);
+        @include subheader__part--("light", $main_light, $secondary, $main_light);
+        @include subheader__part--("color", $secondary, $main_light, $main_light);
+    
     }
 
+    .media-bar{
+        margin-top:50%;
+    }
 
 
 
