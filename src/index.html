@@ -14,25 +14,25 @@
   <body id="body">
         <nav class="sidenav">
                 <ul class="menu">
-                    <li class="menu__item menu__item--first"><a class="link" href=""><i class="fas fa-home"></i></a></li>
-                    <li class="menu__item"><a class="link" href=""><i class="fas fa-search"></i></a></li>
-                    <li class="menu__item"><a class="link" href=""><i class="fas fa-code"></i></a></li>
-                    <li class="menu__item"><a class="link" href=""><i class="fas fa-user"></i></a></li>
-                    <li class="menu__item"><a class="link" href=""><i class="fas fa-phone"></i></a></li>
+                    <li class="menu__item menu__item--first tooltip" data-text="Strona główna"><a class="link" href=""><i class="fas fa-home"></i></a></li>
+                    <li class="menu__item tooltip" data-text="Solidny tester"><a class="link" href=""><i class="fas fa-search"></i></a></li>
+                    <li class="menu__item tooltip" data-text="Pasjonat frontendu"><a class="link" href=""><i class="fas fa-code"></i></a></li>
+                    <li class="menu__item tooltip" data-text="Nie samą pracą..."><a class="link" href=""><i class="fas fa-user"></i></a></li>
+                    <li class="menu__item tooltip" data-text="Skontaktujmy się"><a class="link" href=""><i class="fas fa-phone"></i></a></li>
                 </ul>
             </nav>
     <div class="container">
         <div class="row">
-            <div class="col-6 hero-photo">
+            <div class="col-6 hero-photo" id="hide-on-mobile">
                 <div class="container">
                     <p class="row fake-header"><span class="col-3 fake-header__part--color">Criss</span></p>
                 </div>
             </div>
-                <header class="col-6 hero-photo">
+                <header class="col-6 hero-photo" id="full-on-mobile">
                     <div class="container">
                         <h1 class="row main-header">
-                            <span class="col-2 main-header__part--hidden">Criss</span>
-                            <span class="col-4 main-header__part--dark">Nowik</span>
+                            <span class="col-2 main-header__part--hidden" id="mobi">Criss</span>
+                            <span class="col-4 main-header__part--dark" id="mobi">Nowik</span>
                         </h1>
                         <h2 class="row subheader">
                             <span class="col-3 subheader__part--color">Testing</span> 
@@ -42,28 +42,28 @@
                     </div>
                     <div class="container">
                         <div class="row media-bar">
-                            <div class="col-2 media">
+                            <div class="col-2 media" id="mobi-media">
                                 <a href="https://www.facebook.com/krzysztof.nowicki.5">
                                     <i class="fab fa-facebook-square"></i>
-                                <p>Facebook</p>
+                                <p class="media__txt">Facebook</p>
                                 </a>
                             </div>
-                            <div class="col-2 media">
+                            <div class="col-2 media" id="mobi-media">
                                 <a href="https://github.com/CrissNowik">
                                     <i class="fab fa-github-square"></i>
-                                <p>GitHub</p>
+                                <p class="media__txt">GitHub</p>
                                 </a>
                             </div>
-                            <div class="col-2 media">
+                            <div class="col-2 media" id="mobi-media">
                                 <a href="https://www.linkedin.com/in/krzysztof-nowicki-0a5a9a164/">
                                     <i class="fab fa-linkedin"></i>
-                                <p>LinkedIn</p>
+                                <p class="media__txt">LinkedIn</p>
                                 </a>
                             </div>
-                            <div class="col-2 media">
+                            <div class="col-2 media" id="mobi-media">
                                 <a href="mailto:krzysztof11nowicki@gmail.com">
                                 <i class="fa fa-envelope"></i>
-                                <p>E-mail</p>
+                                <p class="media__txt">E-mail</p>
                                 </a>
                             </div>
                         </div>
@@ -142,8 +142,9 @@
           <div class="copyright">
             <p> &copy; Created by <a href="https://github.com/CrissNowik" target="_blank"> CrissNowik 2019</a></p>
           </div>
-        </footer>
-        <script src="../src/js/experience_clock.js"></script> -->
+        </footer> -->
+        <!-- <script src="../src/js/experience_clock.js"></script> -->
+        <script src="../src/js/tooltip.js"></script>
   </body>
 </html>
 

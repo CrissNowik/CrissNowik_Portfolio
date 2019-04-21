@@ -1,43 +1,14 @@
 @import "./mixins/_mixins",
         "./mixins/_colors";
 
-.sidenav {
-height: 100%;
-width: 75px;
-background: $main_dark;
-position: fixed;
-float: left;
-display: flex;
-align-items: flex-start;
-justify-content: flex-start;
-
-    .menu {
-        list-style: none;
-        .menu__item { 
-            font-size: 20px;
-            width: 75px;
-            height: 75px;
-            @include center;
-            cursor: pointer;
-        }
-        .menu__item:hover{
-            background: $secondary;
-            border-top: 2px solid $main_dark;
-        }
-        .menu__item--first{
-            background: $secondary;
-        }
-        .menu__item--first:hover{
-            background: $main_dark;
-            border-bottom: 2px solid $secondary;
-        }
-        
-     }
- }
-
- .link{
+.link{
      color: $main_light;
      text-decoration: none;
- }
+}
+
+
+
+
+
 
 
