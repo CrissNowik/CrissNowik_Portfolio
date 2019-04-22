@@ -1,6 +1,6 @@
 const startDate = new Date("Sep 1, 2017 00:00:01").getTime();
 
-function experience_clock() {
+export function experience_clock() {
     setInterval(function () {
 
         let data = new Date();
@@ -14,5 +14,3 @@ function experience_clock() {
             minutes + " minut";
     }, 1000);
 };
-
-experience_clock();

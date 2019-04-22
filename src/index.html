@@ -14,14 +14,14 @@
   <body id="body">
         <nav class="sidenav">
                 <ul class="menu">
-                    <li class="menu__item menu__item--first tooltip" data-text="Strona główna"><a class="link" href=""><i class="fas fa-home"></i></a></li>
-                    <li class="menu__item tooltip" data-text="Solidny tester"><a class="link" href=""><i class="fas fa-search"></i></a></li>
-                    <li class="menu__item tooltip" data-text="Pasjonat frontendu"><a class="link" href=""><i class="fas fa-code"></i></a></li>
-                    <li class="menu__item tooltip" data-text="Nie samą pracą..."><a class="link" href=""><i class="fas fa-user"></i></a></li>
-                    <li class="menu__item tooltip" data-text="Skontaktujmy się"><a class="link" href=""><i class="fas fa-phone"></i></a></li>
+                    <li class="menu__item menu__item--first tooltip" data-text="Strona główna" id="goToHome"><a class="link" href="http://localhost:8080/#home"><i class="fas fa-home"></i></a></li>
+                    <li class="menu__item tooltip" data-text="Solidny tester" id="goToTester"><a class="link" href="#tester"><i class="fas fa-search"></i></a></li>
+                    <li class="menu__item tooltip" data-text="Pasjonat frontendu" id="goToFrontend"><a class="link" href="#frontend"><i class="fas fa-code"></i></a></li>
+                    <li class="menu__item tooltip" data-text="Nie samą pracą..." id="goToAbout"><a class="link" href="http://localhost:8080/#about"><i class="fas fa-user"></i></a></li>
+                    <li class="menu__item tooltip" data-text="Skontaktujmy się" id="goToContact"><a class="link" href="#contact"><i class="fas fa-phone"></i></a></li>
                 </ul>
             </nav>
-    <div class="container">
+    <div class="container" id="home">
         <div class="row">
             <div class="col-6 hero-photo" id="hide-on-mobile">
                 <div class="container">
@@ -70,6 +70,30 @@
                     </div>
                 </header>
         </div> 
+    </div>
+    <div class="container" id="tester" style="display:none">
+            <div class="row">
+                <div class="col-6">lewa</div>
+                <div class="col-6">tester</div>
+            </div>
+        </div>
+        <div class="container" id="frontend" style="display:none">
+                <div class="row">
+                    <div class="col-6">lewa</div>
+                    <div class="col-6">frontend</div>
+                </div>
+            </div>
+    <div class="container" id="about">
+        <div class="row">
+            <div class="col-6">lewa</div>
+            <div class="col-6">o mnie</div>
+        </div>
+    </div>
+    <div class="container" id="contact" style="display:none">
+        <div class="row">
+            <div class="col-6">lewa</div>
+            <div class="col-6">kontakt</div>
+        </div>
     </div>
 
 
@@ -143,8 +167,7 @@
             <p> &copy; Created by <a href="https://github.com/CrissNowik" target="_blank"> CrissNowik 2019</a></p>
           </div>
         </footer> -->
-        <!-- <script src="../src/js/experience_clock.js"></script> -->
-        <script src="../src/js/tooltip.js"></script>
+        <script src="./main.js"></script>
   </body>
 </html>
 

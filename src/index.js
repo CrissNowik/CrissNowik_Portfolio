@@ -1,28 +1,14 @@
 import "./main.scss"; // important for build - do not remove
-// import { importTest } from "./js/someJSModule"; // import example
+import { tooltip } from "./js/tooltip";
+// import { experience_clock } from "./js/experience_clock";
+import { sideNavHandler } from "./js/sideNavHandler";
 
-const menuIcon = document.getElementById("menu");
-const footer = document.getElementById("footer");
 
-menuIcon.addEventListener("click", function(){
-    let cl = footer.classList;    
-    if (!cl.contains("fade-in-bottom") && !cl.contains("fade-out-bottom")) {
-        footer.style.display = "flex";
-        cl.add("fade-in-bottom");
+document.addEventListener("DOMContentLoaded", function() {
+    tooltip();
+    sideNavHandler()
+    
+    
+    
+  });
 
-    } else if(cl.contains("fade-in-bottom")){
-        cl.remove("fade-in-bottom");
-        cl.add("fade-out-bottom");
-        setTimeout(function(){
-            footer.style.display = "none";
-        },600)
-        
-
-    } else if(cl.contains("fade-out-bottom")){
-        cl.remove("fade-out-bottom");
-        cl.add("fade-in-bottom");
-        footer.style.display = "flex";
-    }
-});
-
-// 
