@@ -1,11 +1,12 @@
 @import "./../mixins/_mixins",
-        "./../mixins/_colors";
+"./../mixins/_colors";
 
 .tooltip {
     text-decoration: none;
-    color:$main_dark;
+    color: $main_dark;
     position: relative;
     display: inline-block;
+
     .tooltipText {
         position: absolute;
         width: 120px;
@@ -19,21 +20,23 @@
         text-align: center;
         border: 2px solid $main_light;
         z-index: 1;
+
         &:before {
             content: "";
             position: absolute;
-            right:100%;
-            top:50%;
+            right: 100%;
+            top: 50%;
             margin-left: -5px;
             border-width: 5px;
             border-style: solid;
-            border-color:  transparent transparent $main_dark transparent ;
-            margin-left:1px;
-            transform:translatey(-50%) rotate(90deg);
+            border-color: transparent transparent $main_dark transparent;
+            margin-left: 1px;
+            transform: translatey(-50%) rotate(90deg);
         }
     }
 }
-@media screen and (max-height : 415px) and (orientation: landscape){
+
+@media screen and (max-height : 415px) and (orientation: landscape) {
     .tooltip {
         .tooltipText {
             display: none;
@@ -41,7 +44,7 @@
     }
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 360px) {
     .tooltip {
         .tooltipText {
             display: none;

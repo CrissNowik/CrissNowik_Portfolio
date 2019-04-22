@@ -1,49 +1,54 @@
 @import "./../mixins/_mixins",
-        "./../mixins/_colors";
+"./../mixins/_colors";
 
 .sidenav {
-height: 100%;
-width: 75px;
-background: $main_dark;
-position: fixed;
-float: left;
-display: flex;
-align-items: flex-start;
-justify-content: flex-start;
+    height: 100%;
+    width: 75px;
+    background: $main_dark;
+    position: fixed;
+    float: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 
     .menu {
         list-style: none;
-        .menu__item { 
+
+        .menu__item {
             font-size: 20px;
             width: 75px;
             height: 75px;
             @include center;
             cursor: pointer;
         }
-        .menu__item:hover{
+
+        .menu__item:hover {
             background: $secondary;
             border-top: 2px solid $main_dark;
         }
-        .menu__item--first{
+
+        .menu__item--first {
             background: $secondary;
         }
-        .menu__item--first:hover{
+
+        .menu__item--first:hover {
             background: $main_dark;
             border-bottom: 2px solid $secondary;
         }
-        
-     }
- }
 
- @media screen and (max-width: 375px){
+    }
+}
+
+@media screen and (max-width: 375px) {
     .sidenav {
         width: 50px;
-            .menu {
-                .menu__item { 
-                    font-size: 15px;
-                    width: 50px;
-                    height: 50px;
-                }                
-             }
-         }
+
+        .menu {
+            .menu__item {
+                font-size: 15px;
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
 }

@@ -1,226 +1,258 @@
 @import "../mixins/_mixins",
 "../mixins/colors";
 
-.hero-photo { 
+.hero-photo {
     width: 100%;
     height: 100vh;
-    background-image:url("http://lorempixel.com/600/600/people/1/");
+    background-image: url("http://lorempixel.com/600/600/people/1/");
     background-size: cover;
     background-repeat: no-repeat;
 }
-    .main-header {
-        font-size: 4rem;
-        color: $main_light;
-        margin-top: 50px;
-        .main-header__part--hidden {
-            background-color: $secondary;
-            padding: 15px 0;
-            text-align: center;
-            display: none;
-    
-        }
-        .main-header__part--dark {
-            background-color: $main_dark;
-            padding: 15px 30px;
-            text-align: center;
-        }
-    }
-    .fake-header{
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 50px;
-        .fake-header__part--color{
-            color: $main_light;
-            font-size: 4rem;
-            background-color: $secondary;
-            padding: 15px 0;
-            text-align: center;
-            font-weight: bolder;
-        }
-    }
-    
-    .subheader {
-        font-size: 2rem;
-        color: $main_light;
+
+.main-header {
+    font-size: 4rem;
+    color: $main_light;
+    margin-top: 50px;
+
+    .main-header__part--hidden {
+        background-color: $secondary;
+        padding: 15px 0;
         text-align: center;
-// child classes below as a mixin functions
-        @include subheader__part--("dark", $main_dark, $main_light, $main_light);
-        @include subheader__part--("light", $main_light, $secondary, $main_light);
-        @include subheader__part--("color", $secondary, $main_light, $main_light);
-    
+        display: none;
+
     }
 
-    .media-bar{
-        margin-top:40%;
+    .main-header__part--dark {
+        background-color: $main_dark;
+        padding: 15px 30px;
+        text-align: center;
     }
+}
+
+.fake-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+
+    .fake-header__part--color {
+        color: $main_light;
+        font-size: 4rem;
+        background-color: $secondary;
+        padding: 15px 0;
+        text-align: center;
+        font-weight: bolder;
+    }
+}
+
+.subheader {
+    font-size: 2rem;
+    color: $main_light;
+    text-align: center;
+    // child classes below as a mixin functions
+    @include subheader__part--("dark", $main_dark, $main_light, $main_light);
+    @include subheader__part--("light", $main_light, $secondary, $main_light);
+    @include subheader__part--("color", $secondary, $main_light, $main_light);
+
+}
+
+.media-bar {
+    margin-top: 40%;
+}
+
 ///////////
 //
 // media break points below
 //
 ///////////
-@media screen and (max-width: 1660px){
-        .main-header {
+@media screen and (max-width: 1660px) {
+    .main-header {
+        font-size: 3.5rem;
+    }
+
+    .fake-header {
+        .fake-header__part--color {
             font-size: 3.5rem;
         }
-        .fake-header{
-            .fake-header__part--color{
-                font-size: 3.5rem;
-            }
-        }
+    }
 }
 
-@media screen and (max-width: 1520px){
-        .main-header {
+@media screen and (max-width: 1520px) {
+    .main-header {
+        font-size: 3rem;
+    }
+
+    .fake-header {
+        .fake-header__part--color {
             font-size: 3rem;
         }
-        .fake-header{
-            .fake-header__part--color{
-                font-size: 3rem;
-            }
-        }
+    }
 }
 
-@media screen and (max-width: 1390px){
+@media screen and (max-width: 1390px) {
     .main-header {
         font-size: 2.5rem;
     }
-    .fake-header{
-        .fake-header__part--color{
+
+    .fake-header {
+        .fake-header__part--color {
             font-size: 2.5rem;
         }
     }
 }
 
-@media screen and (max-width: 1160px){
-    #hide-on-mobile{
+@media screen and (max-width: 1160px) {
+    #hide-on-mobile {
         display: none;
     }
-    #full-on-mobile{
+
+    #full-on-mobile {
         width: 100%;
         height: 100vh;
     }
+
     .main-header {
         margin-left: 100px;
         font-size: 2rem;
+
         .main-header__part--hidden {
             padding: 15px 30px;
-            display: block;    
+            display: block;
         }
-        #mobi{
+
+        #mobi {
             width: 140px;
         }
+
         .main-header__part--dark {
             background-color: $main_dark;
             padding: 15px 30px;
             text-align: center;
         }
     }
-    
+
     .subheader {
         font-size: 1.5rem;
         margin-left: 100px;
     }
-    .media-bar{
+
+    .media-bar {
         margin: 40% 0 0 100px;
     }
-    #mobi-media{
+
+    #mobi-media {
         width: 70px;
     }
 }
 
-@media screen and (max-width: 768px){
-    #hide-on-mobile{
+@media screen and (max-width: 768px) {
+    #hide-on-mobile {
         display: none;
     }
-    #full-on-mobile{
+
+    #full-on-mobile {
         width: 100%;
         height: 100vh;
     }
-    .hero-photo { 
+
+    .hero-photo {
         width: 100%;
         height: 750px;
     }
-        .main-header {
-            font-size: 2rem;
-            margin-left: 100px;
-            .main-header__part--hidden {
-                padding: 15px 30px;
-                display: block;    
-            }
-            #mobi{
-                width: 140px;
-            }
-            .main-header__part--dark {
-                background-color: $main_dark;
-                padding: 15px 30px;
-                text-align: center;
-            }
+
+    .main-header {
+        font-size: 2rem;
+        margin-left: 100px;
+
+        .main-header__part--hidden {
+            padding: 15px 30px;
+            display: block;
         }
-        .subheader {
-            font-size: 1rem;
-            margin-left: 100px;
+
+        #mobi {
+            width: 140px;
         }
-    
-        .media-bar{
-            margin: 40% 0 0 100px;
+
+        .main-header__part--dark {
+            background-color: $main_dark;
+            padding: 15px 30px;
+            text-align: center;
         }
-        #mobi-media{
-            width: 70px;
-        }
+    }
+
+    .subheader {
+        font-size: 1rem;
+        margin-left: 100px;
+    }
+
+    .media-bar {
+        margin: 40% 0 0 100px;
+    }
+
+    #mobi-media {
+        width: 70px;
+    }
 }
 
 @media screen and (max-height : 415px) and (orientation: landscape) {
-    .hero-photo { 
+    .hero-photo {
         width: 100%;
         height: 420px;
     }
-    .media-bar{
+
+    .media-bar {
         margin: 10% 0 0 80px;
     }
 }
 
-@media screen and (max-width: 379px){
-    #hide-on-mobile{
+@media screen and (max-width: 379px) {
+    #hide-on-mobile {
         display: none;
     }
-    #full-on-mobile{
+
+    #full-on-mobile {
         width: 100%;
         height: 100vh;
     }
-    .hero-photo { 
+
+    .hero-photo {
         width: 100%;
         height: 640px;
     }
-        .main-header {
-            font-size: 1.5rem;
-            margin-left: 80px;
-            .main-header__part--hidden {
-                padding: 10px 25px;
-                display: block;    
-            }
-            #mobi{
-                width: 120px;
-            }
-            .main-header__part--dark {
-                background-color: $main_dark;
-                padding: 10px 25px;
-                text-align: center;
-            }
+
+    .main-header {
+        font-size: 1.5rem;
+        margin-left: 80px;
+
+        .main-header__part--hidden {
+            padding: 10px 25px;
+            display: block;
         }
-        .subheader {
-            font-size: 1rem;
-            margin-left: 80px;
+
+        #mobi {
+            width: 120px;
         }
-    
-        .media-bar{
-            margin: 40% 0 0 60px;
-            .media__txt{
-                font-size: 12px;
-            }
+
+        .main-header__part--dark {
+            background-color: $main_dark;
+            padding: 10px 25px;
+            text-align: center;
         }
-        #mobi-media{
-            width: 60px;
+    }
+
+    .subheader {
+        font-size: 1rem;
+        margin-left: 80px;
+    }
+
+    .media-bar {
+        margin: 40% 0 0 60px;
+
+        .media__txt {
+            font-size: 12px;
         }
+    }
+
+    #mobi-media {
+        width: 60px;
+    }
 }
-
-
