@@ -24,7 +24,8 @@ export function sideNavHandler(){
         item.addEventListener("click", (e) => {
         e.preventDefault();
         console.log(item.id);
-        showAndHide(containers[6].id, containers[0].id)
+        // item.id porównać z tablicą menuItemsIDs i jeśli jest sparować z tym samym nr indeksu w tablicy containersIDs, na koniec przekazać do funkcji
+        showAndHide()
         });
     });
 
@@ -41,6 +42,3 @@ function showAndHide(toShow, toHide) {
                                                     console.log("Sukces");
     
 }
-
-
-// 
