@@ -1,7 +1,7 @@
 export function sideNavHandler(){
    
    const menuItemsArr = Array.from(document.getElementsByClassName("menu__item"));
-   const containers = Array.from(document.getElementsByClassName("container")); 
+   const containers = Array.from(document.getElementsByClassName("container"));    
 
     function hasID(array) {
         const IDs = [];        
@@ -12,20 +12,44 @@ export function sideNavHandler(){
         }
         return IDs;
     }
+    function isVisible(array) {
+        const visibleContainerID = [];        
+        for (let i = 0; i < array.length; i++) {
+           if (array[i].style.display === "block") {  
+            visibleContainerID.push(array[i].id);
+           }
+        }
+        return visibleContainerID;
+    }
 
-    const menuItemsIDs = hasID(menuItemsArr);
     const containersIDs = hasID(containers);
-    console.log("TCL: sideNavHandler -> menuItemsIDs", menuItemsIDs)
-    console.log("TCL: sideNavHandler -> containersIDs", containersIDs)
-    
-
 
     menuItemsArr.forEach((item) => {
         item.addEventListener("click", (e) => {
         e.preventDefault();
-        console.log(item.id);
-        // item.id porównać z tablicą menuItemsIDs i jeśli jest sparować z tym samym nr indeksu w tablicy containersIDs, na koniec przekazać do funkcji
-        showAndHide()
+        let toShow;
+           switch (item.id) {
+                case "goToHome":
+                    toShow = containersIDs[0]; 
+                    break;
+                case "goToTester": 
+                    toShow = containersIDs[1];
+                    break;
+                case "goToFrontend":
+                    toShow = containersIDs[2];
+                    break;
+                case "goToAbout":
+                    toShow = containersIDs[3];
+                    break;
+                case "goToContact":
+                    toShow = containersIDs[4];
+                    break;
+                default: 
+                    console.warn();
+                    ("Error! No suitable sidenav button");
+                   break;
+           }           
+        showAndHide(toShow, isVisible(containers));
         });
     });
 
@@ -35,7 +59,7 @@ export function sideNavHandler(){
 function showAndHide(toShow, toHide) {
     const show = document.getElementById(toShow);
 	                                                console.log("TCL: showAndHide -> show", show)
-    const hide = document.getElementById(toHide);
+    const hide = document.getElementById(toHide[0]);
 	                                                console.log("TCL: showAndHide -> hide", hide)
     show.style.display = "block";
     hide.style.display = "none";
