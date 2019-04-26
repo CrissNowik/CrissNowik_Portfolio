@@ -6,7 +6,7 @@ import { sideNavHandler } from "./js/sideNavHandler";
 
 document.addEventListener("DOMContentLoaded", function() {
     tooltip();
-    sideNavHandler()
+    // sideNavHandler()
     
     
     

@@ -2,7 +2,7 @@ const menuIcon = document.getElementById("menu");
 const footer = document.getElementById("footer");
 
 menuIcon.addEventListener("click", function(){
-    let cl = footer.classList;    
+    const cl = footer.classList;    
     if (!cl.contains("fade-in-bottom") && !cl.contains("fade-out-bottom")) {
         footer.style.display = "flex";
         cl.add("fade-in-bottom");
