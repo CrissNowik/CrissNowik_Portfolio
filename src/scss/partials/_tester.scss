@@ -3,8 +3,7 @@
 "./_counter.scss";
 
 .tester{
-    height: 100vh;
-    overflow:scroll;
+    display: block;
     .list {
         .list__item {
     
@@ -20,10 +19,7 @@
      }
 }
 
-.subsubheader { }
-.small-title { }
-.txt { }
-.cta-btn { }
+
 
 // .years { }
 // .days { }
