@@ -1,0 +1,30 @@
+@import "./../mixins/_mixins",
+"./../mixins/_colors",
+"./_counter.scss";
+
+.tester{
+    height: 100vh;
+    overflow:scroll;
+    .list {
+        .list__item {
+    
+         }
+     }
+    
+    
+    
+    .accordeon {
+        .accordeon__panel { 
+    
+        }
+     }
+}
+
+.subsubheader { }
+.small-title { }
+.txt { }
+.cta-btn { }
+
+// .years { }
+// .days { }
+// .hours { }

@@ -1,7 +1,8 @@
 @import "../mixins/mixins",
 "../mixins/colors";
 
-.counter--container{
-    @include center;
-    height: 320px;
+.experience-clock{
+    .experience-clock__txt {
+        color: red;
+     }
 }
