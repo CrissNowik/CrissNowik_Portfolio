@@ -12,7 +12,15 @@
       padding: 8px 0 10px 0;
       border-top: 2px solid $border_color;
     }
-  
+  }
+  @mixin subsubheader__part--($modifier, $bgc, $color, $border_color) {
+    .subsubheader__part--#{$modifier}{
+      margin: 0;
+      background-color: $bgc;
+      color: $color;
+      padding: 5px 10px;
+      border-top: 2px solid $border_color;
+    }
   }
 
 @mixin fade-in-bottom {

@@ -44,7 +44,7 @@
     font-size: 2rem;
     color: $main_light;
     text-align: center;
-    // child classes below as a mixin functions
+    //                            "modifier", $bgc, $color, $border_color
     @include subheader__part--("dark", $main_dark, $main_light, $main_light);
     @include subheader__part--("light", $main_light, $secondary, $main_light);
     @include subheader__part--("color", $secondary, $main_light, $main_light);

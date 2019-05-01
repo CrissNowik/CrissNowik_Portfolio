@@ -2,7 +2,54 @@
 "../mixins/colors";
 
 .experience-clock{
-    .experience-clock__txt {
-        color: red;
-     }
+    height: 504px;
+    @include center;
+    flex-direction: column;
+    .experience-clock__container{
+        margin-top: 10px;
+        @include center;
+        flex-direction: column;
+        .experience-clock__part{
+            display: flex;
+            margin-bottom: 15px;
+            width: 160px;
+            .experience-clock__num {
+                font-size: 25px;
+                color: $main_light;
+                background: $secondary;
+                text-align: center;
+                margin: 0;
+                height: 43px;
+                font-weight: bolder;
+                padding-top: 3px;
+            }
+            .experience-clock__txt {
+                font-size: 25px;
+                color: $main_light;
+                background: $main_dark;
+                text-align: center;
+                margin: 0;
+                height: 43px;
+                padding-top: 3px;
+            }
+            .years{
+                flex-grow: 1;
+            }
+            .days{
+                flex-grow: 3;
+            }
+            .hours{
+                flex-grow: 2;
+            }
+            .years--rest{
+                flex-grow: 3
+            }
+            .days--rest{
+                flex-grow: 1
+            }
+            .hours--rest{
+                flex-grow: 2;
+            }
+        }
+    }
 }

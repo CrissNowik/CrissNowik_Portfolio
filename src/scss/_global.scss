@@ -1,6 +1,11 @@
 @import "./mixins/_mixins",
 "./mixins/_colors";
 
+.center{
+@include center;
+flex-direction: column;
+}
+
 .hero-photo {
     width: 100%;
     height: 100vh;
@@ -10,11 +15,36 @@
 }
 
 
-.subsubheader { }
-.small-title { }
-.txt { }
+.subsubheader {
+    @include center;
+    //                            "modifier", $bgc, $color, $border_color
+    @include subsubheader__part--("dark", $main_dark, $main_light, $main_light);
+    @include subsubheader__part--("color", $secondary, $main_light, $main_light);
+    @include subsubheader__part--("light", $main_light, $main_dark, $main_light);
+    margin-top: 30px;
+ }
+
+.small-title {
+    margin: 20px 0;
+    border-bottom: 2px solid $background_dark;
+    padding-right: 40px;
+ }
+
+.txt {
+    padding: 30px;
+    color: $main_dark;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 35px;
+ }
+ .underscore{
+    //  border-bottom: 2px solid $background_secondary;
+    background-color: $background_secondary;
+    padding: 0 10px;
+ }
 .link {
     color: $main_light;
     text-decoration: none;
 }
 .cta-btn { }
+

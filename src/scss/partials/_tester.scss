@@ -3,11 +3,22 @@
 "./_counter.scss";
 
 .tester{
-    display: block;
     .list {
+        margin-left: 30px; 
+        list-style: none;
         .list__item {
-    
+            padding: 10px;
+            background-color: $background_dark;
+            
          }
+         .list__item--odd {
+            padding: 10px;
+            background-color: $main_light;
+         }
+         i{ 
+            width: 16px;
+            margin-right: 25px;
+        }
      }
     
     
@@ -19,8 +30,5 @@
      }
 }
 
+  
 
-
-// .years { }
-// .days { }
-// .hours { }
