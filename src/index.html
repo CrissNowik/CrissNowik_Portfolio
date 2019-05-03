@@ -1,416 +1,511 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Jestem Inzynierem Jakości Oprogramowania, testerem manualnym, który mocno interesuje się frontendem. Kocham swoją robotę. Ale jeszcze bardziej kocham się uczyć nowych rzeczy i dlatego ciągle zwiększam swoje umiejętności testerskie i frontentowe.">
-    <meta name="keywords" content="QA, Quality Assurance, test, testing, testowanie, testowanie oprogramowania, tester, testy manualne, testy funkcjonalne, black-box testing, testy automatyczne, testy wydajnościowe, scrum, agile, IT, OLX, java script, html, frontend, css, sass, webpack, gulp, js, cypress.io, jest, enzyme, android, ios, mobile apps, pwa mobile web">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Criss Nowik</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  </head>
-  <body id="body">
-        <nav class="sidenav">
-                <ul class="menu">
-                    <li class="menu__item menu__item--first tooltip" data-text="Strona główna" id="goToHome"><a class="link" href="http://localhost:8080/#home"><i class="fas fa-home"></i></a></li>
-                    <li class="menu__item tooltip" data-text="Solidny tester" id="goToTester"><a class="link" href="http://localhost:8080/#tester"><i class="fas fa-search"></i></a></li>
-                    <li class="menu__item tooltip" data-text="Pasjonat frontendu" id="goToFrontend"><a class="link" href="http://localhost:8080/#frontend"><i class="fas fa-code"></i></a></li>
-                    <li class="menu__item tooltip" data-text="Nie samą pracą..." id="goToAbout"><a class="link" href="http://localhost:8080/#about"><i class="fas fa-user"></i></a></li>
-                    <li class="menu__item tooltip" data-text="Skontaktujmy się" id="goToContact"><a class="link" href="http://localhost:8080/#contact"><i class="fas fa-phone"></i></a></li>
-                </ul>
-            </nav>
-    <div class="container" id="home">
-        <div class="row">
-            <div class="col-6 hero-photo" id="hide-on-mobile">
-                <div class="container">
-                    <p class="row fake-header"><span class="col-3 fake-header__part--color">Criss</span></p>
-                </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="Jestem Inzynierem Jakości Oprogramowania, testerem manualnym, który mocno interesuje się frontendem. Kocham swoją robotę. Ale jeszcze bardziej kocham się uczyć nowych rzeczy i dlatego ciągle zwiększam swoje umiejętności testerskie i frontentowe.">
+  <meta name="keywords"
+    content="QA, Quality Assurance, test, testing, testowanie, testowanie oprogramowania, tester, testy manualne, testy funkcjonalne, black-box testing, testy automatyczne, testy wydajnościowe, scrum, agile, IT, OLX, java script, html, frontend, css, sass, webpack, gulp, js, cypress.io, jest, enzyme, android, ios, mobile apps, pwa mobile web">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Criss Nowik</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+</head>
+
+<body id="body">
+  <nav class="sidenav">
+    <ul class="menu">
+      <li class="menu__item menu__item--first tooltip" data-text="Strona główna" id="goToHome"><a class="link"
+          href="http://localhost:8080/#home"><i class="fas fa-home"></i></a></li>
+      <li class="menu__item tooltip" data-text="Solidny tester" id="goToTester"><a class="link"
+          href="http://localhost:8080/#tester"><i class="fas fa-search"></i></a></li>
+      <li class="menu__item tooltip" data-text="Pasjonat frontendu" id="goToFrontend"><a class="link"
+          href="http://localhost:8080/#frontend"><i class="fas fa-code"></i></a></li>
+      <li class="menu__item tooltip" data-text="Nie samą pracą..." id="goToAbout"><a class="link"
+          href="http://localhost:8080/#about"><i class="fas fa-user"></i></a></li>
+      <li class="menu__item tooltip" data-text="Skontaktujmy się" id="goToContact"><a class="link"
+          href="http://localhost:8080/#contact"><i class="fas fa-phone"></i></a></li>
+    </ul>
+  </nav>
+  <div class="container" id="home">
+    <div class="row">
+      <div class="col-6 hero-photo" id="hide-on-mobile">
+        <div class="container">
+          <p class="row fake-header"><span class="col-3 fake-header__part--color">Criss</span></p>
+        </div>
+      </div>
+      <header class="col-6 hero-photo" id="full-on-mobile">
+        <div class="container">
+          <h1 class="row main-header">
+            <span class="col-2 main-header__part--hidden" id="mobi">Criss</span>
+            <span class="col-4 main-header__part--dark" id="mobi">Nowik</span>
+          </h1>
+          <h2 class="row subheader">
+            <span class="col-3 subheader__part--color">Testing</span>
+            <span class="col-1 subheader__part--light">&</span>
+            <span class="col-4 subheader__part--dark">Frontend</span>
+          </h2>
+        </div>
+        <div class="container">
+          <div class="row media-bar">
+            <div class="col-2 media" id="mobi-media">
+              <a href="https://www.facebook.com/krzysztof.nowicki.5">
+                <i class="fab fa-facebook-square"></i>
+                <p class="media__txt">Facebook</p>
+              </a>
             </div>
-                <header class="col-6 hero-photo" id="full-on-mobile">
-                    <div class="container">
-                        <h1 class="row main-header">
-                            <span class="col-2 main-header__part--hidden" id="mobi">Criss</span>
-                            <span class="col-4 main-header__part--dark" id="mobi">Nowik</span>
-                        </h1>
-                        <h2 class="row subheader">
-                            <span class="col-3 subheader__part--color">Testing</span> 
-                            <span class="col-1 subheader__part--light">&</span> 
-                            <span class="col-4 subheader__part--dark">Frontend</span> 
-                        </h2>
-                    </div>
-                    <div class="container">
-                        <div class="row media-bar">
-                            <div class="col-2 media" id="mobi-media">
-                                <a href="https://www.facebook.com/krzysztof.nowicki.5">
-                                    <i class="fab fa-facebook-square"></i>
-                                <p class="media__txt">Facebook</p>
-                                </a>
-                            </div>
-                            <div class="col-2 media" id="mobi-media">
-                                <a href="https://github.com/CrissNowik">
-                                    <i class="fab fa-github-square"></i>
-                                <p class="media__txt">GitHub</p>
-                                </a>
-                            </div>
-                            <div class="col-2 media" id="mobi-media">
-                                <a href="https://www.linkedin.com/in/krzysztof-nowicki-0a5a9a164/">
-                                    <i class="fab fa-linkedin"></i>
-                                <p class="media__txt">LinkedIn</p>
-                                </a>
-                            </div>
-                            <div class="col-2 media" id="mobi-media">
-                                <a href="mailto:krzysztof11nowicki@gmail.com">
-                                <i class="fa fa-envelope"></i>
-                                <p class="media__txt">E-mail</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-        </div> 
+            <div class="col-2 media" id="mobi-media">
+              <a href="https://github.com/CrissNowik">
+                <i class="fab fa-github-square"></i>
+                <p class="media__txt">GitHub</p>
+              </a>
+            </div>
+            <div class="col-2 media" id="mobi-media">
+              <a href="https://www.linkedin.com/in/krzysztof-nowicki-0a5a9a164/">
+                <i class="fab fa-linkedin"></i>
+                <p class="media__txt">LinkedIn</p>
+              </a>
+            </div>
+            <div class="col-2 media" id="mobi-media">
+              <a href="mailto:krzysztof11nowicki@gmail.com">
+                <i class="fa fa-envelope"></i>
+                <p class="media__txt">E-mail</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
     </div>
-    <div class="container tester" id="tester">
+  </div>
+  <div class="container tester" id="tester">
+    <div class="row">
+      <div class="col-6 hero-photo" id="hide-on-mobile"></div>
+      <div class="col-6">
+        <h2 class="row subheader">
+          <span class="col-3 subheader__part--color">Solidny</span>
+          <span class="col-4 subheader__part--dark">Tester</span>
+        </h2>
+        <div class="row">
+          <div class="col-12">
+            <p class="txt">
+              Na codzień pracuję jako <strong class="underscore">
+                Quality Assurance Engineer</strong> w serwisie OLX.pl. Pracuję wg metodologii Agile w zespole, który
+              rozwija platformę OLX w 7 krajach. <strong class="underscore">
+                Odpowiadam między innymi za:
+              </strong>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <ul class="list">
+              <strong>
+                <li class="list__item"> <i class="fas fa-chart-bar"></i> Metryki jakości</li>
+                <li class="list__item--odd"> <i class="fas fa-cogs"></i> Testy automtyczne</li>
+                <li class="list__item"><i class="fas fa-search"></i> Testy funkcjonalne</li>
+                <li class="list__item--odd"><i class="fas fa-list-ol"></i> Scenariusze testowe</li>
+                <li class="list__item"><i class="fas fa-file-alt"></i> Dokumentację testów</li>
+                <li class="list__item--odd"><i class="far fa-lightbulb"></i> Usprawnienia procesu</li>
+                <li class="list__item"> <i class="fas fa-mobile-alt"></i> Testy aplikacji Android i iOS</li>
+                <li class="list__item--odd"><i class="fas fa-bug"></i> Zarządzanie naprawą bugów</li>
+                <li class="list__item"><i class="fas fa-clipboard-list"></i> Scenariusze do automatyzacji</li>
+                <li class="list__item--odd"><i class="far fa-comment"></i> Feedback od Obsługi Użytkownika</li>
+                <li class="list__item"><i class="fas fa-users"></i> Prowadzenie scrumowych ceremonii</li>
+                <li class="list__item--odd"><i class="fas fa-arrows-alt-h"></i> Koordynację pracy zespołu testerów z
+                  Indii</li>
+              </strong>
+
+            </ul>
+          </div>
+          <div class="col-4 center">
+            <div class="experience-clock" id="experience-clock">
+              <h2 class="subsubheader">
+                <span class="subsubheader__part--dark">Testuję</span>
+                <span class="subsubheader__part--color">od:</span>
+              </h2>
+              <div class="experience-clock__container">
+                <div class="experience-clock__part">
+                  <span class="experience-clock__num years">00</span>
+                  <span class="experience-clock__txt years--rest">roku</span>
+                </div>
+                <div class="experience-clock__part">
+                  <span class="experience-clock__num days">00</span>
+                  <span class="experience-clock__txt days--rest">dni</span>
+                </div>
+                <div class="experience-clock__part">
+                  <span class="experience-clock__num hours">00</span>
+                  <span class="experience-clock__txt hours--rest">godzin</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h3 class="subsubheader">
+            <span class="subsubheader__part--dark">Narzędzia</span>
+            <span class="subsubheader__part--light">i</span>
+            <span class="subsubheader__part--color">technologie</span>
+            <span class="subsubheader__part--dark" id="spanModal">
+              <button id="fireModal">
+                <i class="fas fa-list-ol"></i>
+              </button>
+            </span>
+          </h3>
+          <div id="modal" class="modal">
+            <div class="modal__content">
+              <span class="modal__close">&times;</span>
+              <h3 class="modal__header">Skala</h3>
+              <p class="modal__txt">
+                <span class="modal__txt--bold">1/10 </span> - coś słyszałem, coś widziałem</p>
+              <p class="modal__txt">
+                <span class="modal__txt--bold">2/10 </span> - zrobiłem tutorial, coś doczytałem</p>
+              <p class="modal__txt">
+                <span class="modal__txt--bold">3/10 </span> - używałem kilka razy</p>
+              <p class="modal__txt">
+                <span class="modal__txt--bold">4/10 </span> - czasem używam</p>
+              <p class="modal__txt">
+                <span class="modal__txt--bold">5/10 </span> - znam, ale brak mi biegłości</p>
+              <p class="modal__txt">
+                <span class="modal__txt--bold">6/10 </span> - jest ok, ale sporo nauki przede mną</p>
+              <p class="modal__txt">
+                <span class="modal__txt--bold">7/10 </span> - sprawnie korzystam </p>
+              <p class="modal__txt">
+                <span class="modal__txt--bold">8/10 </span> - ogarniam zaawansowane funkcje</p>
+              <p class="modal__txt">
+                <span class="modal__txt--bold">9/10 </span> - seniorzy słuchają mnie jak wyroczni</p>
+              <p class="modal__txt">
+                <span class="modal__txt--bold--margin">10/10</span> - wiem więcej niż twórcy;-) </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h4 class="small-title accordeon">Testy automatyczne <i class="icon--header fas fa-angle-down"></i></h4>
+          <div class="accordeon__panel">
             <div class="row">
-                <div class="col-6 hero-photo" id="hide-on-mobile"></div>
-                <div class="col-6">
-                  <h2 class="row subheader">
-                    <span class="col-3 subheader__part--color">Solidny</span> 
-                    <span class="col-4 subheader__part--dark">Tester</span> 
-                  </h2>
-                  <div class="row">
-                    <div class="col-12">
-                      <p class="txt">
-                        Na codzień pracuję jako <strong class="underscore">
-                             Quality Assurance Engineer</strong> w serwisie OLX.pl. Pracuję wg metodologii Agile w zespole, który rozwija platformę OLX w 7 krajach. <strong class="underscore">
-                            Odpowiadam między innymi za:
-                        </strong> 
-                      </p>
-                    </div>
-                  </div>
-                  <div class="row">
-                      <div class="col-8">
-                        <ul class="list">
-                          <strong>
-                              <li class="list__item"> <i class="fas fa-chart-bar"></i> Metryki jakości</li>
-                              <li class="list__item--odd"> <i class="fas fa-cogs"></i> Testy automtyczne</li>
-                              <li class="list__item"><i class="fas fa-search"></i> Testy funkcjonalne</li>
-                              <li class="list__item--odd"><i class="fas fa-list-ol"></i> Scenariusze testowe</li>
-                              <li class="list__item"><i class="fas fa-file-alt"></i> Dokumentację testów</li>
-                              <li class="list__item--odd"><i class="far fa-lightbulb"></i> Usprawnienia procesu</li>
-                              <li class="list__item"> <i class="fas fa-mobile-alt"></i> Testy aplikacji Android i iOS</li>
-                              <li class="list__item--odd"><i class="fas fa-bug"></i> Zarządzanie naprawą bugów</li>
-                              <li class="list__item"><i class="fas fa-clipboard-list"></i> Scenariusze do automatyzacji</li>
-                              <li class="list__item--odd"><i class="far fa-comment"></i> Feedback od Obsługi Użytkownika</li>
-                              <li class="list__item"><i class="fas fa-users"></i> Prowadzenie scrumowych ceremonii</li>
-                              <li class="list__item--odd"><i class="fas fa-arrows-alt-h"></i> Koordynację pracy zespołu testerów z Indii</li>
-                          </strong>
-                          
-                        </ul>
-                      </div>
-                      <div class="col-4 center">
-                        <div class="experience-clock" id="experience-clock">
-                          <h2 class="subsubheader">
-                              <span class="subsubheader__part--dark">Testuję</span>  
-                              <span class="subsubheader__part--color">od:</span> 
-                          </h2>
-                          <div class="experience-clock__container">
-                            <div class="experience-clock__part">
-                                <span class="experience-clock__num years">00</span>
-                                <span class="experience-clock__txt years--rest">roku</span>
-                            </div>
-                            <div class="experience-clock__part">
-                                <span class="experience-clock__num days">00</span>
-                                <span class="experience-clock__txt days--rest">dni</span>
-                            </div>
-                            <div class="experience-clock__part">
-                                <span class="experience-clock__num hours">00</span>
-                                <span class="experience-clock__txt hours--rest">godzin</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-                    <div class="row">
-                      <h3 class="subsubheader">
-                          <span class="subsubheader__part--dark">Narzędzia</span> 
-                          <span class="subsubheader__part--light">i</span> 
-                          <span class="subsubheader__part--color">technologie</span> 
-                          <span class="subsubheader__part--dark"><i class="fas fa-list-ol"></i></span> 
-                        </h3>
-                    </div>                  
-                      <div class="row">
-                        <h4 class="small-title accordeon">Testy automatyczne</h4>  
-                        <div class="accordeon__panel">
-                          <div class="row">
-                            <div class="col-2" id="center--height">
-                              <img src="http://localhost:8080/src/photo/cypress_ico.png" alt="cypress_icon"> 
-                            </div>
-                            <div class="col-2" id="center--height">
-                              <img src="http://localhost:8080/src/photo/karma_ico.png" alt="karma_icon"> 
-                            </div>
-                            <div class="col-2" id="center--height">
-                              <img src="http://localhost:8080/src/photo/mocha_ico.png" alt="mocha_icon"> 
-                            </div>
-                            <div class="col-2" id="center--height">
-                              <img src="http://localhost:8080/src/photo/sinon_ico.png" alt="sinon_icon">  
-                            </div>
-                            <div class="col-2" id="center--height">
-                              <img src="http://localhost:8080/src/photo/chai_ico.png" alt="chai_icon"> 
-                            </div>
-                            <div class="col-2" id="center--height">
-                              <img src="http://localhost:8080/src/photo/istanbul_ico.png" alt="istambul_icon"> 
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-2 center">
-                               <p class="txt">Cypress.io</p> 
-                            </div>
-                            <div class="col-2 center">
-                              <p class="txt">Karma.js</p>  
-                            </div>
-                            <div class="col-2 center">
-                              <p class="txt">Mocha.js</p>  
-                            </div>
-                            <div class="col-2 center">
-                               <p class="txt">Sinon.js</p> 
-                            </div>
-                            <div class="col-2 center">
-                              <p class="txt">Chai.js</p>  
-                            </div>
-                            <div class="col-2 center">
-                              <p class="txt">Istambul.js</p> 
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-2 center">
-                              <p class="txt">7/10</p> 
-                            </div>
-                            <div class="col-2 center">
-                              <p class="txt">7/10</p>
-                            </div>
-                            <div class="col-2 center">
-                              <p class="txt">5/10</p>
-                            </div>
-                            <div class="col-2 center">
-                              <p class="txt">5/10</p>
-                            </div>
-                            <div class="col-2 center">
-                              <p class="txt">5/10</p>
-                            </div>
-                            <div class="col-2 center">
-                              <p class="txt">7/10</p> 
-                            </div>
-                          </div>
-                        </div>
-                        <h4 class="small-title accordeon">Quality Assurance</h4>  
-                        <div class="accordeon__panel">
-                          <div class="row">
-                            <div class="col-2" id="center--height">
-                              <img src="http://localhost:8080/src/photo/jira_ico.png" alt="jira_icon"> 
-                            </div>
-                            <div class="col-2" id="center--height">
-                              <img src="http://localhost:8080/src/photo/confluence_ico.png" alt="confluence_icon"> 
-                            </div>
-                            <div class="col-2" id="center--height">
-                              <img src="http://localhost:8080/src/photo/grafana_ico.png" alt="grafana_icon"> 
-                            </div>
-                            <div class="col-2" id="center--height">
-                              <img src="http://localhost:8080/src/photo/git_ico.png" alt="git_icon"> 
-                            </div>
-                            <div class="col-2" id="center--height">
-                              <img src="http://localhost:8080/src/photo/sequelpro_ico.png" alt="sequelpro_icon"> 
-                            </div>
-                            <div class="col-2" id="center--height">
-                              <img src="http://localhost:8080/src/photo/vsc_ico.png" alt="vsc_icon"> 
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-2 center">
-                              <p class="txt">JIRA</p> 
-                            </div>
-                            <div class="col-2 center">
-                              <p class="txt">Confluence</p> 
-                            </div>
-                            <div class="col-2 center">
-                              <p class="txt">Grafana</p> 
-                            </div>
-                            <div class="col-2 center">
-                               <p class="txt">Git</p> 
-                            </div>
-                            <div class="col-2 center">
-                              <p class="txt">SequelPro</p> 
-                            </div>
-                            <div class="col-2 center">
-                              <p class="txt">VSC</p> 
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-2 center">
-                              <p class="txt">8/10</p> 
-                            </div>
-                            <div class="col-2 center">
-                               <p class="txt">8/10</p> 
-                            </div>
-                            <div class="col-2 center">
-                               <p class="txt">6/10</p> 
-                            </div>
-                            <div class="col-2 center">
-                               <p class="txt">7/10</p> 
-                            </div>
-                            <div class="col-2 center">
-                               <p class="txt">5/10</p> 
-                            </div>
-                            <div class="col-2 center">
-                              <p class="txt">7/10</p> 
-                            </div>
-                          </div>
-                        </div>
-                        <h4 class="small-title accordeon">Technologie</h4>  
-                        <div class="accordeon__panel ">
-                          <div class="row">
-                            <div class="col-2 center">
-                                <i class="tech-ico devicon-html5-plain"></i>
-                            </div>
-                            <div class="col-2 center">
-                              <i class="tech-ico devicon-javascript-plain"></i>
-                            </div>
-                            <div class="col-2 center">
-                              <i class="tech-ico devicon-css3-plain"></i>
-                            </div>
-                            <div class="col-2 center">
-                              <i class="tech-ico devicon-sass-original"></i>
-                            </div>
-                            <div class="col-2 center">
-                              <i class="tech-ico devicon-mysql-plain"></i>
-                            </div>
-                            <div class="col-2 center">
-                              <i class="tech-ico devicon-java-plain"></i>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-2 center">
-                              <p class="txt">HTML5</p>
-                            </div>
-                            <div class="col-2 center">
-                              <p class="txt">JS ES6</p>
-                            </div>
-                            <div class="col-2 center">
-                               <p class="txt">CSS3</p>
-                            </div>
-                            <div class="col-2 center">
-                              <p class="txt">SASS</p>
-                            </div>
-                            <div class="col-2 center">
-                              <p class="txt">mySQL</p>
-                            </div>
-                            <div class="col-2 center">
-                              <p class="txt">Java</p>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-2 center">
-                              <p class="txt">7/10</p>
-                            </div>
-                            <div class="col-2 center">
-                               <p class="txt">6/10</p>
-                            </div>
-                            <div class="col-2 center">
-                               <p class="txt">8/10</p>
-                            </div>
-                            <div class="col-2 center">
-                               <p class="txt">8/10</p>
-                            </div>
-                            <div class="col-2 center">
-                               <p class="txt">4/10</p>
-                            </div>
-                            <div class="col-2 center">
-                               <p class="txt">2/10</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    <div class="row">
-                        <h3 class="subsubheader">
-                            <span class="subsubheader__part--color">Certyfikaty</span> <span class="subsubheader__part--light">i</span> 
-                            <span class="subsubheader__part--dark">szkolenia</span> 
-                         </h3>
-                         <div class="row">
-                            <div class="col-6 center">
-                                <h4 class="small-title">ISTQB - 14.02.18</h4> 
-                                <p class="txt">
-                                  Do egzaminu podszedłem po pół roku pracy na stanowisku testera i zdałem go w pierwszym podejściu uzyskując międzynarodowy certyfikat poświadczający znajomość standardów i dobrych praktyk testowania rozpoznawany na całym świecie (identyfikator 54502). 
-                                </p>
-                            </div>
-                            <div class="col-6 center">
-                                <h4 class="small-title">Agility & PM techniques - 05.02.19</h4>
-                                <p class="txt">
-                                  Agile to bardzo popularna metodyka wytwarzania oprogramowania, a duża część zespołów deweloperskich pracuje korzystając ze Scrum’a. Warto było zatem uporządkować i przećwiczyć to co już wiem o Agile, Scrum i zarządzaniu projektami. Takiej wiedzy nigdy za mało.
-                                </p> 
-                            </div>
-                         </div>
-                      
-                    </div>
-                    <div class="row">
-                      <div class="col-6">
-                          <h3 class="subsubheader"> 
-                              <span class="subsubheader__part--dark">Projekty</span> 
-                           </h3>
-                          <div class="row">
-                            <div class="col-6">Category Management Tool</div>
-                            <div class="col-6">Search Experiments</div>
-                          </div>
-                          <div class="row">
-                            <div class="col-6">Bugathon 2019</div>
-                            <div class="col-6">Berlin Onboarding Summit</div>
-                          </div>
-                      </div>
-                      <div class="col-6">
-                          <h3 class="subsubheader"> 
-                              <span class="subsubheader__part--color">Usługi</span> 
-                           </h3>
-                        <div class="row">
-                          <div class="col-4">Testy funkcjonalne</div>
-                          <div class="col-4">QA Consulting</div>
-                          <div class="col-4">Audyty SEO</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-12">
-                        <button class="cta-btn" type="submit">Skontaktujmy się!</button>
-                      </div>
-                    </div>
+              <div class="col-2" id="center--height">
+                <img src="http://localhost:8080/src/photo/cypress_ico.png" alt="cypress_icon">
+              </div>
+              <div class="col-2" id="center--height">
+                <img src="http://localhost:8080/src/photo/karma_ico.png" alt="karma_icon">
+              </div>
+              <div class="col-2" id="center--height">
+                <img src="http://localhost:8080/src/photo/mocha_ico.png" alt="mocha_icon">
+              </div>
+              <div class="col-2" id="center--height">
+                <img src="http://localhost:8080/src/photo/sinon_ico.png" alt="sinon_icon">
+              </div>
+              <div class="col-2" id="center--height">
+                <img src="http://localhost:8080/src/photo/chai_ico.png" alt="chai_icon">
+              </div>
+              <div class="col-2" id="center--height">
+                <img src="http://localhost:8080/src/photo/istanbul_ico.png" alt="istambul_icon">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 center">
+                <p class="txt">Cypress.io</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">Karma.js</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">Mocha.js</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">Sinon.js</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">Chai.js</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">Istambul.js</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 center">
+                <p class="txt">7/10</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">5/10</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">5/10</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">5/10</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">5/10</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">5/10</p>
+              </div>
+            </div>
+          </div>
+          <h4 class="small-title accordeon">Quality Assurance <i class="icon--header fas fa-angle-down"></i></h4>
+          <div class="accordeon__panel">
+            <div class="row">
+              <div class="col-2" id="center--height">
+                <img src="http://localhost:8080/src/photo/jira_ico.png" alt="jira_icon">
+              </div>
+              <div class="col-2" id="center--height">
+                <img src="http://localhost:8080/src/photo/confluence_ico.png" alt="confluence_icon">
+              </div>
+              <div class="col-2" id="center--height">
+                <img src="http://localhost:8080/src/photo/grafana_ico.png" alt="grafana_icon">
+              </div>
+              <div class="col-2" id="center--height">
+                <img src="http://localhost:8080/src/photo/git_ico.png" alt="git_icon">
+              </div>
+              <div class="col-2" id="center--height">
+                <img src="http://localhost:8080/src/photo/sequelpro_ico.png" alt="sequelpro_icon">
+              </div>
+              <div class="col-2" id="center--height">
+                <img src="http://localhost:8080/src/photo/vsc_ico.png" alt="vsc_icon">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 center">
+                <p class="txt">JIRA</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">Confluence</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">Grafana</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">Git</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">SequelPro</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">VSC</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 center">
+                <p class="txt">8/10</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">8/10</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">6/10</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">7/10</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">5/10</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">7/10</p>
+              </div>
+            </div>
+          </div>
+          <h4 class="small-title accordeon">Technologie <i class="icon--header fas fa-angle-down"></i></h4>
+          <div class="accordeon__panel ">
+            <div class="row">
+              <div class="col-2 center">
+                <i class="tech-ico devicon-html5-plain"></i>
+              </div>
+              <div class="col-2 center">
+                <i class="tech-ico devicon-javascript-plain"></i>
+              </div>
+              <div class="col-2 center">
+                <i class="tech-ico devicon-css3-plain"></i>
+              </div>
+              <div class="col-2 center">
+                <i class="tech-ico devicon-sass-original"></i>
+              </div>
+              <div class="col-2 center">
+                <i class="tech-ico devicon-mysql-plain"></i>
+              </div>
+              <div class="col-2 center">
+                <i class="tech-ico devicon-java-plain"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 center">
+                <p class="txt">HTML5</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">JS ES6</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">CSS3</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">SASS</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">mySQL</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">Java</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 center">
+                <p class="txt">7/10</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">6/10</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">8/10</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">8/10</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">4/10</p>
+              </div>
+              <div class="col-2 center">
+                <p class="txt">2/10</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h3 class="subsubheader">
+            <span class="subsubheader__part--color">Certyfikaty</span> <span class="subsubheader__part--light">i</span>
+            <span class="subsubheader__part--dark">szkolenia</span>
+          </h3>
+          <div class="row">
+            <div class="col-6 center">
+              <h4 class="small-title">ISTQB - 14.02.18</h4>
+              <p class="txt">
+                Do egzaminu podszedłem po pół roku pracy na stanowisku testera i zdałem go w pierwszym podejściu
+                uzyskując międzynarodowy certyfikat poświadczający znajomość standardów i dobrych praktyk testowania
+                rozpoznawany na całym świecie (identyfikator 54502).
+              </p>
+            </div>
+            <div class="col-6 center">
+              <h4 class="small-title">Agility & PM techniques - 05.02.19</h4>
+              <p class="txt">
+                Agile to bardzo popularna metodyka wytwarzania oprogramowania, a duża część zespołów deweloperskich
+                pracuje korzystając ze Scrum’a. Warto było zatem uporządkować i przećwiczyć to co już wiem o Agile,
+                Scrum i zarządzaniu projektami. Takiej wiedzy nigdy za mało.
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h3 class="subsubheader">
+              <span class="subsubheader__part--dark">Projekty</span>
+            </h3>
+              <div class="col-12 center">
+                <h4 class="small-title accordeon accordeon--center">Category Management Tool <i class="icon--header fas fa-angle-down"></i></h4>
+                <p class="txt accordeon__panel">
+                Szybkość w jakiej potrafimy się adaptować do zmiennych warunków decyduje o sukcesie. Dlatego trafiłem do zespołu, który rozwija narzędzie, pozwalające działowi Business sprawnie zarządzać drzewem kategorii i szybko zmieniać je w serwisie OLX. Dla mnie to nowe doświadczenie ponieważ testuję sporo backendu. 
+                </p>
+              </div>
+              <div class="col-12 center">
+                <h4 class="small-title accordeon accordeon--center">Search Experiments <i class="icon--header fas fa-angle-down"></i></h4>
+              <p class="txt accordeon__panel">
+                  OLX-owy projekt, w którym stawiałem pierwsze kroki jako tester manualny. W dużym skrócie mieliśmy zupełnie wolną rękę w kwestii udoskonalenia wyszukiwarki od strony UX jak i mechanizmów wyszukujących. Część z naszych pomysłów udało się wdrożyć i służą użytkownikom do teraz, a mi udało się zdobyć testerskie ostrogi:-) 
+              </p>
+              </div>
+              <div class="col-12 center">
+                <h4 class="small-title accordeon accordeon--center">Bugathon 2019 <i class="icon--header fas fa-angle-down"></i></h4>
+                <p class="txt accordeon__panel">
+                    Szalona historia - zorganizowałem w firmie coś na kształt hackathonu, tyle że przekonałem wszystkich od góry do dołu, że nie będziemy tworzyć nowych ficzerów - będziemy naprawiać bugi. Była też klasyfikacja dla najskuteczniejszych developerów, symboliczne nagrody. Do tego kapitalna integracja QA i developerów. Nawet <a class="link--dark" href="http://www.facebook.com/PracujwGrupieOLX/photos/a.1716873371879925/2314121902155066/?type=3&theater
+                    " target="_blank">Pracuj w Grupie OLX</a> pochwaliło się sukcesem ;-) 
+                </p>
+              </div>
+              <div class="col-12 center">
+                <h4 class="small-title accordeon accordeon--center">Berlin Onboarding Summit <i class="icon--header fas fa-angle-down"></i></h4>
+              <p class="txt accordeon__panel">
+                  Zatrudniasz kilkudziesięciu nowych developerów - pochodzą nie tylko z różnych firm, ale nawet z różnych krajów - od Kanady po Filipiny. Wszystkich trzeba jak najszybciej wdrożyć do pracy w OLX. Przypadło mi w udziale nauczenie nowych kolegów naszych OLX-owych zasad dbania o jakość oprogramowania, współpracy z testerami itp. Świetne doświadczenie, wymiana wiedzy w międzynarodowym towarzystwie i otwarcie na nowe sposoby pracy. +100 do umiejętności interpersonalnych.
+              </p>
+              </div>
+          </div>
+          <div class="col-12">
+            <h3 class="subsubheader">
+              <span class="subsubheader__part--color">Usługi</span>
+            </h3>
+            <div class="row">
+                <div class="col-8 center">
+                    <h4 class="small-title">Testy funkcjonalne</h4>
+                  <p class="txt">
+                    Nagle potrzebujesz testera by wzmocnić siłę zespołu? Albo do sprawdzenia otrzymanego oprogramowania? Chętnie posłużę Ci swoją wiedzą i umiejętnościami by sprawdzić działanie Twojej strony, aplikacji czy oprogramowania. Testuję na bazie scenariuszy biznesowych jak i eksploracyjnie. Uzgodnimy wspólnie obszary testów i pożądane scenariusze do sprawdzenia. Na koniec dostaniesz raport z testów i rekomendacje usprawnień.
+                    <a class="link--dark" href="http://localhost:8080/#contact">Napisz!</a>
+                  </p>
+                </div>
+                <div class="col-4 center--height">
+                  <i class="icon--big fas fa-bug"></i>
                 </div>
             </div>
-        </div>
-        <div class="container" id="frontend">
-                <div class="row">
-                    <div class="col-6">lewa frontend</div>
-                    <div class="col-6 hero-photo" id="hide-on-mobile"></div>
+            <div class="row">
+                <div class="col-4 center--height">
+                    <i class="icon--big fas fa-search"></i>
+                </div>
+                <div class="col-8 center">
+                    <h4 class="small-title">QA Consulting</h4>
+                  <p class="txt">
+                    Chcesz wprowadzić politykę zapewnienia jakości w swojej firmie? Potrzebujesz porady co zrobić, by proces produkcji oprogramowania był efektywniejszy, bardziej odporny na przypadki losowe, a efekty pracy zespołu były najwyższej jakości. Świeże spojrzenie z boku to zawsze cenna porada.  
+                    <a class="link--dark" href="http://localhost:8080/#contact">Zapraszam do współpracy.</a> 
+                  </p>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-8 center">
+                    <h4 class="small-title">Audyty SEO</h4>
+                    <p class="txt">
+                      Może czasem zadajesz sobie pytanie, dlaczego Twoja strona www nie pokazuje się w wyszukiwarce po wpisaniu danej frazy. I w ogóle dlaczego masz tak mało klientów dzięki stronie internetowej? Proponuję audyt SEO - zobaczę co można poprawić, by Twoja strona była bardziej przyjazna dla robotów Google i przedstawię rekomendacje w formie raportu z propozycjami rozwiązań. Zainteresowany? 
+                      <a class="link--dark" href="http://localhost:8080/#contact">Napisz do mnie!</a> 
+                    </p>
+                </div>
+                <div class="col-4 center--height">
+                    <i class="icon--big fas fa-chart-line "></i>
                 </div>
             </div>
-    <div class="container" id="about">
-        <div class="row">
-            <div class="col-6 hero-photo" id="hide-on-mobile"></div>
-            <div class="col-6">prawa o mnie </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="container" id="contact">
         <div class="row">
-            <div class="col-6">lewa kontakt</div>
-            <div class="col-6 hero-photo" id="hide-on-mobile"></div>
+          <div class="col-12">
+            <button class="cta-btn" type="submit">Skontaktujmy się!</button>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+  <div class="container" id="frontend">
+    <div class="row">
+      <div class="col-6">lewa frontend</div>
+      <div class="col-6 hero-photo" id="hide-on-mobile"></div>
+    </div>
+  </div>
+  <div class="container" id="about">
+    <div class="row">
+      <div class="col-6 hero-photo" id="hide-on-mobile"></div>
+      <div class="col-6">prawa o mnie </div>
+    </div>
+  </div>
+  <div class="container" id="contact">
+    <div class="row">
+      <div class="col-6">lewa kontakt</div>
+      <div class="col-6 hero-photo" id="hide-on-mobile"></div>
+    </div>
+  </div>
 
 
-   
 
 
-      
-       <!-- <footer class="footer" id="footer">
+
+
+  <!-- <footer class="footer" id="footer">
           <div class="leftSide">
               <div class="listColumn">
                 <ul class="column one">
@@ -477,36 +572,31 @@
             <p> &copy; Created by <a href="https://github.com/CrissNowik" target="_blank"> CrissNowik 2019</a></p>
           </div>
         </footer> -->
-        <script>
-            function accordeon() {
-            let acc = document.getElementsByClassName("accordeon");
-              
-            for (let i = 0; i <  acc.length; i++) {
-              acc[i].addEventListener("click", function() {
+  <script>
+    function accordeon() {
+      let acc = document.getElementsByClassName("accordeon");
 
-                this.classList.toggle("active");        
-                
-                let panel = this.nextElementSibling;
-                
-                if (panel.style.display === "") {
-                    panel.style.display = "block";
-                    // console.log("1", panel);
-                } 
-                else if (panel.style.display === "block"){
-                    panel.style.display = "none";
-                    // console.log("2", panel);
-                }
-                else if (panel.style.display === "none"){
-                    panel.style.display = "block";
-                    // console.log("3", panel);
-                }
-              console.log("po", panel);
-              });
-            }
+      for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+
+          this.classList.toggle("active");
+
+          let panel = this.nextElementSibling;
+
+          if (panel.style.display === "") {
+            panel.style.display = "block";
+          } else if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else if (panel.style.display === "none") {
+            panel.style.display = "block";
           }
-          accordeon();
-        </script>
-        <script src="./main.js"></script>
-  </body>
-</html>
+          console.log("po", panel);
+        });
+      }
+    }
+    accordeon();
+  </script>
+  <script src="./main.js"></script>
+</body>
 
+</html>

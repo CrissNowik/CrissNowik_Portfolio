@@ -4,6 +4,11 @@
     justify-content: center;
   }
 
+  @mixin center--height($height) {  
+      @include center;
+      height: $height;
+  }
+
   @mixin subheader__part--($modifier, $bgc, $color, $border_color) {
     .subheader__part--#{$modifier}{
       float: left;

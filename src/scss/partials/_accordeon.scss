@@ -2,30 +2,36 @@
 "./../mixins/_colors";
 
 .accordeon {
-    background-color: $main_light;
-    color: $main_dark;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-    &:hover {
-      background-color: $background_dark; 
-    }
+  background-color: $main_light;
+  color: $main_dark;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+
+  &:hover {
+    background-color: $background_dark;
+  }
 }
+.accordeon--center {
+  text-align: center;
+  @extend .accordeon;
+}
+
 .accordeon__panel {
-    padding: 0 18px;
-    display: none;
-    background-color: $main_light;
-    overflow: hidden;
+  padding: 0 18px;
+  display: none;
+  background-color: $main_light;
+  overflow: hidden;
 }
-  
-  .active{
-    background-color: $background_dark; 
-  }
-  .tech-ico{
-    font-size: 100px;
-  }
+
+.active {
+  background-color: $background_dark;
+}
+
+.tech-ico {
+  font-size: 100px;
+}

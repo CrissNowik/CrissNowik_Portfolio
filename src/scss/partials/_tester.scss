@@ -20,13 +20,15 @@
             margin-right: 25px;
         }
      }
-    
-    
-    
-    .accordeon {
-        .accordeon__panel { 
-    
+     .icon--header{
+        margin-left: 10px;
+        &:hover{
+           color: $secondary;
         }
+     }
+     .icon--big{
+        font-size: 200px;
+        color: $background_dark;
      }
 }
 

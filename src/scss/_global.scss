@@ -6,8 +6,10 @@
 flex-direction: column;
 }
 #center--height{
-    @include center;
-    height: 115px;
+    @include center--height(115px);
+}
+.center--height{
+    @include center--height(340px);
 }
 
 .hero-photo {
@@ -50,6 +52,10 @@ flex-direction: column;
 .link {
     color: $main_light;
     text-decoration: none;
+}
+.link--dark {
+    color: $main_dark;
+    text-decoration: underline;
 }
 .cta-btn {
     
