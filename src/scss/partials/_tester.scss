@@ -3,6 +3,11 @@
 "./_counter.scss";
 
 .tester{
+
+   .tester__content{
+      height: 100vh;
+      overflow: scroll;
+   
     .list {
         margin-left: 30px; 
         list-style: none;
@@ -30,6 +35,7 @@
         font-size: 200px;
         color: $background_dark;
      }
+   }
 }
 
   
