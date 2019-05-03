@@ -10,7 +10,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-
+    
     .menu {
         list-style: none;
 
@@ -20,6 +20,7 @@
             height: 75px;
             @include center;
             cursor: pointer;
+            color: $main_light;
         }
 
         .menu__item:hover {
