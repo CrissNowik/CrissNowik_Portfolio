@@ -43,7 +43,14 @@ flex-direction: column;
     text-align: justify;
     line-height: 35px;
  }
-
+ .txt--technology {
+    padding: 15px 10px;
+    color: $main_dark;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 35px;
+    margin-left: 0;
+ }
  
  .underscore{
     border-bottom: 2px solid $background_secondary;
@@ -65,6 +72,14 @@ flex-direction: column;
         padding: 30px 10px;
         line-height: inherit;
         margin-left: 50px;
+     }
+     .txt--technology {
+        padding: 0 0 10px 0;
+        color: $main_dark;
+        font-size: 16px;
+        text-align: justify;
+        line-height: 35px;
+        margin-left: 0;
      }
      .subsubheader {
         margin: 30px 0 0 50px;
