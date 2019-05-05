@@ -67,6 +67,57 @@ flex-direction: column;
 // .cta-btn {
     
 //  }
+
+///////////
+//
+// media break points below
+//
+///////////
+
+@media screen and (max-width: 1660px) {
+
+}
+
+@media screen and (max-width: 1520px) {
+
+}
+
+@media screen and (max-width: 1390px) {
+
+}
+
+@media screen and (max-width: 1160px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .txt {
+        padding: 30px 10px;
+        line-height: inherit;
+        margin-left: 75px;
+     }
+     .txt--technology {
+        padding: 0 0 10px 0;
+        color: $main_dark;
+        font-size: 16px;
+        text-align: justify;
+        line-height: 35px;
+        margin-left: 0;
+     }
+     .subsubheader {
+        margin: 30px 0 0 75px;
+        display: flex;
+        flex-wrap: wrap;
+     }
+     .small-title {
+        margin-left: 75px;
+        padding-right: 10px;
+     }
+}
+
+@media screen and (max-height : 415px) and (orientation: landscape) {
+
+}
 @media screen and (max-width: 379px) {
     .txt {
         padding: 30px 10px;
