@@ -38,5 +38,38 @@
    }
 }
 
-  
+@media screen and (max-width: 379px) {
+   .tester{
+      #w100{
+         width: 100%;
+      }
+      #w85{
+         width: 85%;
+         float: right;
+      }
 
+      .tester__content{
+       .list {
+           margin-left: 50px; //
+            i{ 
+               width: 16px;
+               margin-right: 5px; //
+           }
+        }
+        .icon--big{
+           margin-left: 50px; // 
+        }
+      }
+   }
+   .bgd-on-mobile{
+      margin-top: -400px;
+      position: relative;
+      z-index: -1;
+   }
+   .bgd-on-mobile2{
+      margin-bottom: -400px;
+      padding-top: 100px;
+      position: relative;
+      z-index: -1;
+   }
+}

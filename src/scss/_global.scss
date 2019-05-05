@@ -60,4 +60,20 @@ flex-direction: column;
 // .cta-btn {
     
 //  }
+@media screen and (max-width: 379px) {
+    .txt {
+        padding: 30px 10px;
+        line-height: inherit;
+        margin-left: 50px;
+     }
+     .subsubheader {
+        margin: 30px 0 0 50px;
+        display: flex;
+        flex-wrap: wrap;
+     }
+     .small-title {
+        margin-left: 50px;
+        padding-right: 10px;
+     }
+}
 

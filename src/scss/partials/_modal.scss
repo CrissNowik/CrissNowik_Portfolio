@@ -67,3 +67,19 @@
         }
     }
 }
+
+@media screen and (max-width: 379px) {
+    #spanModal {
+        @include center;
+        
+    }
+    .modal {
+        .modal__content {
+            background-color: $main_light;
+            margin: 15% auto;
+            padding: 10px;
+            border: 1px solid $main_dark;
+            width: 80%;
+        }
+    }
+}
