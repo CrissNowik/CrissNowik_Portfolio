@@ -91,7 +91,19 @@
 }
 
 @media screen and (max-width: 768px) {
-
+    #spanModal {
+        @include center;
+        
+    }
+    .modal {
+        .modal__content {
+            background-color: $main_light;
+            margin: 15% auto;
+            padding: 10px;
+            border: 1px solid $main_dark;
+            width: 80%;
+        }
+    }
 }
 
 @media screen and (max-height : 415px) and (orientation: landscape) {

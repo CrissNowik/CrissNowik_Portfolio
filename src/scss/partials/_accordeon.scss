@@ -59,7 +59,13 @@
 }
 
 @media screen and (max-width: 768px) {
-
+  .m50{
+    margin-left: 50px;
+    #w50{
+      width: 50%;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media screen and (max-height : 415px) and (orientation: landscape) {
