@@ -74,23 +74,7 @@
 //
 ///////////
 
-@media screen and (max-width: 1660px) {
-
-}
-
-@media screen and (max-width: 1520px) {
-
-}
-
-@media screen and (max-width: 1390px) {
-
-}
-
 @media screen and (max-width: 1160px) {
-
-}
-
-@media screen and (max-width: 768px) {
     #spanModal {
         @include center;
         
@@ -106,22 +90,6 @@
     }
 }
 
-@media screen and (max-height : 415px) and (orientation: landscape) {
+// @media screen and (max-height : 415px) and (orientation: landscape) {
 
-}
-
-@media screen and (max-width: 379px) {
-    #spanModal {
-        @include center;
-        
-    }
-    .modal {
-        .modal__content {
-            background-color: $main_light;
-            margin: 15% auto;
-            padding: 10px;
-            border: 1px solid $main_dark;
-            width: 80%;
-        }
-    }
-}
+// }

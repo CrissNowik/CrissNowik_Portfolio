@@ -44,23 +44,54 @@
 //
 ///////////
 
-@media screen and (max-width: 1660px) {
-
-}
-
-@media screen and (max-width: 1520px) {
-
-}
-
-@media screen and (max-width: 1390px) {
-
-}
-
 @media screen and (max-width: 1160px) {
-
+   .tester{
+      .tester__content{
+       .list {
+           margin-left: 75px; //
+            i{ 
+               width: 16px;
+               margin-right: 5px; //
+           }
+        }
+        .icon--big{
+           margin-left: -15px;
+        }
+        .icon--odd{
+            margin-left: 75px;
+            margin-right: -75px; 
+        }
+      }
+   }
 }
 
 @media screen and (max-width: 768px) {
+   .tester{
+      #w100{
+         width: 100%;
+      }
+      #w85{
+         width: 85%;
+         float: right;
+      }
+      .tester__content{
+         .list {
+            margin-left: 75px; //
+               i{ 
+                  width: 16px;
+                  margin-right: 5px; //
+                }
+         }
+         .bgd-on-mobile{
+            display: none;
+         }
+         .bgd-on-mobile2{
+            display: none;
+         }
+      }
+   }
+}
+@media screen and (max-width: 450px) {
    .tester{
       #w100{
          width: 100%;
@@ -81,23 +112,25 @@
         .icon--big{
            margin-left: 75px; // 
         }
+        .icon--odd{
+         margin: 0 0 0 50px;
+         }
+        .bgd-on-mobile{
+         margin-top: -350px;
+         position: relative;
+         z-index: -1;
+         display: flex;
+      }
+      .bgd-on-mobile2{
+         margin-bottom: -500px;
+         padding-top: 100px;
+         position: relative;
+         z-index: -1;
+         display: flex;
       }
    }
-   .bgd-on-mobile{
-      margin-top: -350px;
-      position: relative;
-      z-index: -1;
+      
    }
-   .bgd-on-mobile2{
-      margin-bottom: -500px;
-      padding-top: 100px;
-      position: relative;
-      z-index: -1;
-   }
-}
-
-@media screen and (max-height : 415px) and (orientation: landscape) {
-
 }
 
 @media screen and (max-width: 379px) {
@@ -121,17 +154,22 @@
         .icon--big{
            margin-left: 50px; // 
         }
+        .icon--odd{
+         margin: 0 0 0 50px;
+         }
+        .bgd-on-mobile{
+           margin-top: -400px;
+           position: relative;
+           z-index: -1;
+           display: flex;
+         }
+         .bgd-on-mobile2{
+            margin-bottom: -400px;
+            padding-top: 100px;
+            position: relative;
+            z-index: -1;
+            display: flex;
+         }
       }
-   }
-   .bgd-on-mobile{
-      margin-top: -400px;
-      position: relative;
-      z-index: -1;
-   }
-   .bgd-on-mobile2{
-      margin-bottom: -400px;
-      padding-top: 100px;
-      position: relative;
-      z-index: -1;
    }
 }

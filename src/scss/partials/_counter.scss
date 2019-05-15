@@ -60,20 +60,10 @@
 //
 ///////////
 
-@media screen and (max-width: 1660px) {
-
-}
-
-@media screen and (max-width: 1520px) {
-
-}
-
-@media screen and (max-width: 1390px) {
-
-}
-
 @media screen and (max-width: 1160px) {
-    
+    #m0{
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -82,9 +72,9 @@
     }
 }
 
-@media screen and (max-height : 415px) and (orientation: landscape) {
+// @media screen and (max-height : 415px) and (orientation: landscape) {
 
-}
+// }
 
 @media screen and (max-width: 379px) {
     #m0{
