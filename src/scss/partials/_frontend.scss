@@ -1,6 +1,10 @@
 @import "./../mixins/_mixins",
 "./../mixins/_colors";
 
-#frontend{
-    // display: none;
+.frontend{
+
+   .frontend__content{
+    height: 100vh;
+    overflow: scroll;
+   }
 }

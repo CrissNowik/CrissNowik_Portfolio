@@ -36,11 +36,6 @@
             color: $secondary;
          }
       }
-
-      .icon--big {
-         font-size: 200px;
-         color: $background_dark;
-      }
    }
 }
 
@@ -60,15 +55,6 @@
                width: 16px;
                margin-right: 5px; //
             }
-         }
-
-         .icon--big {
-            margin-left: -15px;
-         }
-
-         .icon--odd {
-            margin-left: 75px;
-            margin-right: -75px;
          }
       }
    }
@@ -127,14 +113,6 @@
             }
          }
 
-         .icon--big {
-            margin-left: 75px; // 
-         }
-
-         .icon--odd {
-            margin: 0 0 0 50px;
-         }
-
          .bgd-on-mobile {
             margin-top: -350px;
             position: relative;
@@ -173,14 +151,6 @@
                width: 16px;
                margin-right: 5px; //
             }
-         }
-
-         .icon--big {
-            margin-left: 50px; // 
-         }
-
-         .icon--odd {
-            margin: 0 0 0 50px;
          }
 
          .bgd-on-mobile {

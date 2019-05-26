@@ -64,6 +64,10 @@ flex-direction: column;
     color: $main_dark;
     text-decoration: underline;
 }
+.icon--big {
+   font-size: 200px;
+   color: $background_dark;
+}
 // .cta-btn {
     
 //  }
@@ -84,6 +88,14 @@ flex-direction: column;
         line-height: 35px;
         margin-left: 75px;
      }
+     .icon--big {
+      margin-left: -15px;
+      }
+
+      .icon--odd {
+         margin-left: 75px;
+         margin-right: -75px;
+      }
 }
 
 @media screen and (max-width: 768px) {
@@ -113,9 +125,16 @@ flex-direction: column;
      }
 }
 
-@media screen and (max-height : 415px) and (orientation: landscape) {
+@media screen and (max-width: 450px) {
+   .icon--big {
+      margin-left: 75px; // 
+   }
 
+   .icon--odd {
+      margin: 0 0 0 50px;
+   }
 }
+
 @media screen and (max-width: 379px) {
     .txt {
         padding: 30px 10px;
@@ -134,5 +153,12 @@ flex-direction: column;
         margin-left: 50px;
         padding-right: 10px;
      }
+      .icon--big {
+         margin-left: 50px; // 
+      }
+
+      .icon--odd {
+         margin: 0 0 0 50px;
+      }
 }
 
